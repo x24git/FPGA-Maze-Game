@@ -1,0 +1,101 @@
+//! **************************************************************************
+// Written by: Map P.68d on Mon Mar 12 15:46:31 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "BtnC" LOCATE = SITE "B8" LEVEL 1;
+COMP "BtnD" LOCATE = SITE "C9" LEVEL 1;
+COMP "BtnL" LOCATE = SITE "C4" LEVEL 1;
+COMP "BtnR" LOCATE = SITE "D9" LEVEL 1;
+COMP "BtnU" LOCATE = SITE "A8" LEVEL 1;
+COMP "vga_h_sync" LOCATE = SITE "N6" LEVEL 1;
+COMP "vga_v_sync" LOCATE = SITE "P7" LEVEL 1;
+COMP "an<0>" LOCATE = SITE "N16" LEVEL 1;
+COMP "an<1>" LOCATE = SITE "N15" LEVEL 1;
+COMP "an<2>" LOCATE = SITE "P18" LEVEL 1;
+COMP "an<3>" LOCATE = SITE "P17" LEVEL 1;
+COMP "sw<0>" LOCATE = SITE "T10" LEVEL 1;
+COMP "sw<1>" LOCATE = SITE "T9" LEVEL 1;
+COMP "sw<2>" LOCATE = SITE "V9" LEVEL 1;
+COMP "sw<3>" LOCATE = SITE "M8" LEVEL 1;
+COMP "sw<4>" LOCATE = SITE "N8" LEVEL 1;
+COMP "sw<5>" LOCATE = SITE "U8" LEVEL 1;
+COMP "sw<6>" LOCATE = SITE "V8" LEVEL 1;
+COMP "sw<7>" LOCATE = SITE "T5" LEVEL 1;
+COMP "seg<0>" LOCATE = SITE "T17" LEVEL 1;
+COMP "seg<1>" LOCATE = SITE "T18" LEVEL 1;
+COMP "seg<2>" LOCATE = SITE "U17" LEVEL 1;
+COMP "seg<3>" LOCATE = SITE "U18" LEVEL 1;
+COMP "seg<4>" LOCATE = SITE "M14" LEVEL 1;
+COMP "seg<5>" LOCATE = SITE "N14" LEVEL 1;
+COMP "seg<6>" LOCATE = SITE "L14" LEVEL 1;
+COMP "seg<7>" LOCATE = SITE "M13" LEVEL 1;
+COMP "vga_b<0>" LOCATE = SITE "R7" LEVEL 1;
+COMP "vga_b<1>" LOCATE = SITE "T7" LEVEL 1;
+COMP "vga_g<0>" LOCATE = SITE "P8" LEVEL 1;
+COMP "vga_g<1>" LOCATE = SITE "T6" LEVEL 1;
+COMP "vga_g<2>" LOCATE = SITE "V6" LEVEL 1;
+COMP "vga_r<0>" LOCATE = SITE "U7" LEVEL 1;
+COMP "vga_r<1>" LOCATE = SITE "V7" LEVEL 1;
+COMP "vga_r<2>" LOCATE = SITE "N7" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "plogic/rst" BEL "plogic/player_pos_out_0" BEL
+        "plogic/player_pos_out_1" BEL "plogic/player_pos_out_2" BEL
+        "plogic/player_pos_out_3" BEL "plogic/player_pos_out_4" BEL
+        "plogic/player_pos_out_5" BEL "plogic/player_pos_out_6" BEL
+        "plogic/player_pos_out_7" BEL "plogic/player_pos_out_8" BEL
+        "plogic/player_pos_out_9" BEL "plogic/clk_debounce" BEL
+        "plogic/step_C_0" BEL "plogic/step_R_0" BEL "plogic/step_U_0" BEL
+        "plogic/step_D_0" BEL "plogic/step_L_0" BEL "plogic/clk_debounce_d"
+        BEL "plogic/movementValid.player_pos_out_0" BEL
+        "plogic/movementValid.player_pos_out_1" BEL
+        "plogic/movementValid.player_pos_out_2" BEL
+        "plogic/movementValid.player_pos_out_3" BEL
+        "plogic/movementValid.player_pos_out_4" BEL
+        "plogic/movementValid.player_pos_out_5" BEL
+        "plogic/movementValid.player_pos_out_6" BEL
+        "plogic/movementValid.player_pos_out_7" BEL
+        "plogic/movementValid.player_pos_out_8" BEL
+        "plogic/movementValid.player_pos_out_9" BEL "plogic/win" BEL
+        "plogic/clk_debouncedv_0" BEL "plogic/clk_debouncedv_1" BEL
+        "plogic/clk_debouncedv_2" BEL "plogic/clk_debouncedv_3" BEL
+        "plogic/clk_debouncedv_4" BEL "plogic/clk_debouncedv_5" BEL
+        "plogic/clk_debouncedv_6" BEL "plogic/clk_debouncedv_7" BEL
+        "plogic/clk_debouncedv_8" BEL "plogic/clk_debouncedv_9" BEL
+        "plogic/clk_debouncedv_10" BEL "plogic/clk_debouncedv_11" BEL
+        "plogic/clk_debouncedv_12" BEL "plogic/clk_debouncedv_13" BEL
+        "plogic/clk_debouncedv_14" BEL "plogic/clk_debouncedv_15" BEL
+        "plogic/clk_debouncedv_16" BEL "plogic/clk_debouncedv_17" BEL
+        "clk_div_18" BEL "clk_div_19" BEL "clk_div_20" BEL "clk_div_21" BEL
+        "clk_div_22" BEL "score/clk_dispdv_17" BEL "score/clk_dispdv_16" BEL
+        "score/clk_dispdv_15" BEL "score/clk_dispdv_14" BEL
+        "score/clk_dispdv_13" BEL "score/clk_dispdv_12" BEL
+        "score/clk_dispdv_11" BEL "score/clk_dispdv_10" BEL
+        "score/clk_dispdv_9" BEL "score/clk_dispdv_8" BEL "score/clk_dispdv_7"
+        BEL "score/clk_dispdv_6" BEL "score/clk_dispdv_5" BEL
+        "score/clk_dispdv_4" BEL "score/clk_dispdv_3" BEL "score/clk_dispdv_2"
+        BEL "score/clk_dispdv_1" BEL "score/clk_dispdv_0" BEL
+        "score/clk_onedv_22" BEL "score/clk_onedv_21" BEL "score/clk_onedv_20"
+        BEL "score/clk_onedv_19" BEL "score/clk_onedv_18" BEL
+        "score/clk_onedv_17" BEL "score/clk_onedv_16" BEL "score/clk_onedv_15"
+        BEL "score/clk_onedv_14" BEL "score/clk_onedv_13" BEL
+        "score/clk_onedv_12" BEL "score/clk_onedv_11" BEL "score/clk_onedv_10"
+        BEL "score/clk_onedv_9" BEL "score/clk_onedv_8" BEL
+        "score/clk_onedv_7" BEL "score/clk_onedv_6" BEL "score/clk_onedv_5"
+        BEL "score/clk_onedv_4" BEL "score/clk_onedv_3" BEL
+        "score/clk_onedv_2" BEL "score/clk_onedv_1" BEL "score/clk_onedv_0"
+        BEL "score/score_14" BEL "score/score_13" BEL "score/score_10" BEL
+        "score/score_9" BEL "score/score_6" BEL "score/score_5" BEL
+        "score/score_2" BEL "score/score_1" BEL "score/time_on" BEL
+        "score/first_move" BEL "score/clk_disp" BEL "score/clk_one" BEL
+        "score/move_on" BEL "plogic/move" BEL "score/score_15" BEL
+        "score/score_12" BEL "score/score_11" BEL "score/score_8" BEL
+        "score/score_7" BEL "score/score_4" BEL "score/score_3" BEL
+        "score/score_0" BEL "clk_BUFGP/BUFG" BEL "plogic/Mshreg_step_U_1" BEL
+        "plogic/step_U_1" BEL "plogic/Mshreg_step_C_1" BEL "plogic/step_C_1"
+        BEL "plogic/Mshreg_step_R_1" BEL "plogic/step_R_1" BEL
+        "plogic/Mshreg_step_D_1" BEL "plogic/step_D_1" BEL
+        "plogic/Mshreg_step_L_1" BEL "plogic/step_L_1";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+SCHEMATIC END;
+

@@ -1,0 +1,6 @@
+verilog work "hvsync_generator.v"
+verilog work "score.v"
+verilog work "player_logic.v"
+verilog work "maze_selector.v"
+verilog work "display.v"
+verilog work "Maze.v"

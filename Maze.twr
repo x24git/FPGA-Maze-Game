@@ -1,0 +1,722 @@
+--------------------------------------------------------------------------------
+Release 14.6 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf
+
+Design file:              Maze.ncd
+Physical constraint file: Maze.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-06-08)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 
+50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 196810 paths analyzed, 494 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   9.933ns.
+--------------------------------------------------------------------------------
+
+Paths for end point plogic/win (SLICE_X30Y26.A1), 24640 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     0.067ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               plogic/player_pos_out_0 (FF)
+  Destination:          plogic/win (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      9.878ns (Levels of Logic = 10)
+  Clock Path Skew:      -0.020ns (0.276 - 0.296)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: plogic/player_pos_out_0 to plogic/win
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X32Y27.BQ      Tcko                  0.408   plogic/player_pos_out<1>
+                                                       plogic/player_pos_out_0
+    SLICE_X28Y31.A5      net (fanout=85)       1.209   plogic/player_pos_out<0>
+    SLICE_X28Y31.AMUX    Topaa                 0.377   plogic/Maddsub_n0168_Madd1_cy<7>
+                                                       plogic/Maddsub_n0168_Madd1_lut<4>
+                                                       plogic/Maddsub_n0168_Madd1_cy<7>
+    SLICE_X28Y27.C5      net (fanout=1)        0.902   plogic/Maddsub_n0168_4
+    SLICE_X28Y27.CMUX    Topcc                 0.392   plogic/Maddsub_n0168_Madd_cy<5>
+                                                       plogic/Maddsub_n0168_Madd_lut<4>
+                                                       plogic/Maddsub_n0168_Madd_cy<5>
+    SLICE_X30Y27.D3      net (fanout=6)        0.823   plogic/n0121<4>
+    SLICE_X30Y27.D       Tilo                  0.203   plogic/Mmux_player_pos_in[4]_X_6_o_Mux_40_o_91
+                                                       plogic/Mmux_player_pos_in[4]_X_6_o_Mux_40_o_91
+    SLICE_X28Y29.D6      net (fanout=1)        0.585   plogic/Mmux_player_pos_in[4]_X_6_o_Mux_40_o_91
+    SLICE_X28Y29.CMUX    Topdc                 0.338   plogic/Mmux_player_pos_in[4]_X_6_o_Mux_40_o_81
+                                                       plogic/Mmux_player_pos_in[4]_X_6_o_Mux_40_o_4
+                                                       plogic/Mmux_player_pos_in[4]_X_6_o_Mux_40_o_2_f7
+    SLICE_X29Y27.B5      net (fanout=3)        0.553   plogic/player_pos_in[4]_X_6_o_Mux_40_o
+    SLICE_X29Y27.BMUX    Tilo                  0.313   plogic/n0126<6>
+                                                       plogic/Mmux_player_pos_in[9]_player_start[9]_mux_63_OUT1421
+    SLICE_X31Y28.B6      net (fanout=2)        0.594   plogic/Mmux_player_pos_in[9]_player_start[9]_mux_63_OUT142
+    SLICE_X31Y28.B       Tilo                  0.259   plogic/Mmux_GND_11_o_X_6_o_Mux_20_o_1917
+                                                       plogic/Mmux_player_pos_in[9]_player_start[9]_mux_63_OUT1211
+    SLICE_X30Y28.C2      net (fanout=3)        0.602   plogic/Mmux_player_pos_in[9]_player_start[9]_mux_63_OUT121
+    SLICE_X30Y28.CMUX    Tilo                  0.261   plogic/Mmux_GND_11_o_X_6_o_Mux_20_o_182
+                                                       plogic/Mmux_player_pos_in[9]_player_start[9]_mux_63_OUT16_SW0
+    SLICE_X33Y27.B6      net (fanout=1)        0.356   N8
+    SLICE_X33Y27.B       Tilo                  0.259   plogic/player_pos_out<8>
+                                                       plogic/Mmux_player_pos_in[9]_player_start[9]_mux_63_OUT16
+    SLICE_X30Y26.C4      net (fanout=1)        0.477   plogic/player_pos_in[9]_player_start[9]_mux_63_OUT<7>
+    SLICE_X30Y26.C       Tilo                  0.204   plogic/player_pos_out<6>
+                                                       plogic/player_pos_in[9]_player_end[9]_equal_66_o102
+    SLICE_X30Y26.A1      net (fanout=1)        0.474   plogic/player_pos_in[9]_player_end[9]_equal_66_o101
+    SLICE_X30Y26.CLK     Tas                   0.289   plogic/player_pos_out<6>
+                                                       plogic/player_pos_in[9]_player_end[9]_equal_66_o104
+                                                       plogic/win
+    -------------------------------------------------  ---------------------------
+    Total                                      9.878ns (3.303ns logic, 6.575ns route)
+                                                       (33.4% logic, 66.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.083ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               plogic/player_pos_out_6 (FF)
+  Destination:          plogic/win (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      9.882ns (Levels of Logic = 10)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: plogic/player_pos_out_6 to plogic/win
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X30Y26.BQ      Tcko                  0.447   plogic/player_pos_out<6>
+                                                       plogic/player_pos_out_6
+    SLICE_X31Y30.A5      net (fanout=204)      0.990   plogic/player_pos_out<6>
+    SLICE_X31Y30.A       Tilo                  0.259   plogic/Mmux_player_pos_in[4]_X_6_o_Mux_50_o_133
+                                                       plogic/Mmux_player_pos_in[4]_X_6_o_Mux_40_o_20111
+    SLICE_X32Y29.A1      net (fanout=2)        0.969   plogic/Mmux_GND_11_o_X_6_o_Mux_20_o_2011
+    SLICE_X32Y29.A       Tilo                  0.205   plogic/Mmux_GND_11_o_X_6_o_Mux_20_o_152
+                                                       plogic/Mmux_player_pos_in[4]_X_6_o_Mux_40_o_153
+    SLICE_X28Y25.D1      net (fanout=1)        1.078   plogic/Mmux_player_pos_in[4]_X_6_o_Mux_40_o_153
+    SLICE_X28Y25.D       Tilo                  0.205   plogic/Mmux_player_pos_in[4]_X_6_o_Mux_40_o_10
+                                                       plogic/Mmux_player_pos_in[4]_X_6_o_Mux_40_o_10
+    SLICE_X28Y29.D5      net (fanout=1)        0.750   plogic/Mmux_player_pos_in[4]_X_6_o_Mux_40_o_10
+    SLICE_X28Y29.CMUX    Topdc                 0.338   plogic/Mmux_player_pos_in[4]_X_6_o_Mux_40_o_81
+                                                       plogic/Mmux_player_pos_in[4]_X_6_o_Mux_40_o_4
+                                                       plogic/Mmux_player_pos_in[4]_X_6_o_Mux_40_o_2_f7
+    SLICE_X29Y27.B5      net (fanout=3)        0.553   plogic/player_pos_in[4]_X_6_o_Mux_40_o
+    SLICE_X29Y27.BMUX    Tilo                  0.313   plogic/n0126<6>
+                                                       plogic/Mmux_player_pos_in[9]_player_start[9]_mux_63_OUT1421
+    SLICE_X31Y28.B6      net (fanout=2)        0.594   plogic/Mmux_player_pos_in[9]_player_start[9]_mux_63_OUT142
+    SLICE_X31Y28.B       Tilo                  0.259   plogic/Mmux_GND_11_o_X_6_o_Mux_20_o_1917
+                                                       plogic/Mmux_player_pos_in[9]_player_start[9]_mux_63_OUT1211
+    SLICE_X30Y28.C2      net (fanout=3)        0.602   plogic/Mmux_player_pos_in[9]_player_start[9]_mux_63_OUT121
+    SLICE_X30Y28.CMUX    Tilo                  0.261   plogic/Mmux_GND_11_o_X_6_o_Mux_20_o_182
+                                                       plogic/Mmux_player_pos_in[9]_player_start[9]_mux_63_OUT16_SW0
+    SLICE_X33Y27.B6      net (fanout=1)        0.356   N8
+    SLICE_X33Y27.B       Tilo                  0.259   plogic/player_pos_out<8>
+                                                       plogic/Mmux_player_pos_in[9]_player_start[9]_mux_63_OUT16
+    SLICE_X30Y26.C4      net (fanout=1)        0.477   plogic/player_pos_in[9]_player_start[9]_mux_63_OUT<7>
+    SLICE_X30Y26.C       Tilo                  0.204   plogic/player_pos_out<6>
+                                                       plogic/player_pos_in[9]_player_end[9]_equal_66_o102
+    SLICE_X30Y26.A1      net (fanout=1)        0.474   plogic/player_pos_in[9]_player_end[9]_equal_66_o101
+    SLICE_X30Y26.CLK     Tas                   0.289   plogic/player_pos_out<6>
+                                                       plogic/player_pos_in[9]_player_end[9]_equal_66_o104
+                                                       plogic/win
+    -------------------------------------------------  ---------------------------
+    Total                                      9.882ns (3.039ns logic, 6.843ns route)
+                                                       (30.8% logic, 69.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.160ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               plogic/player_pos_out_0 (FF)
+  Destination:          plogic/win (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      9.785ns (Levels of Logic = 10)
+  Clock Path Skew:      -0.020ns (0.276 - 0.296)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: plogic/player_pos_out_0 to plogic/win
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X32Y27.BQ      Tcko                  0.408   plogic/player_pos_out<1>
+                                                       plogic/player_pos_out_0
+    SLICE_X28Y31.A5      net (fanout=85)       1.209   plogic/player_pos_out<0>
+    SLICE_X28Y31.AMUX    Topaa                 0.377   plogic/Maddsub_n0168_Madd1_cy<7>
+                                                       plogic/Maddsub_n0168_Madd1_lut<4>
+                                                       plogic/Maddsub_n0168_Madd1_cy<7>
+    SLICE_X28Y27.C5      net (fanout=1)        0.902   plogic/Maddsub_n0168_4
+    SLICE_X28Y27.CMUX    Topcc                 0.392   plogic/Maddsub_n0168_Madd_cy<5>
+                                                       plogic/Maddsub_n0168_Madd_lut<4>
+                                                       plogic/Maddsub_n0168_Madd_cy<5>
+    SLICE_X28Y25.D6      net (fanout=6)        0.563   plogic/n0121<4>
+    SLICE_X28Y25.D       Tilo                  0.205   plogic/Mmux_player_pos_in[4]_X_6_o_Mux_40_o_10
+                                                       plogic/Mmux_player_pos_in[4]_X_6_o_Mux_40_o_10
+    SLICE_X28Y29.D5      net (fanout=1)        0.750   plogic/Mmux_player_pos_in[4]_X_6_o_Mux_40_o_10
+    SLICE_X28Y29.CMUX    Topdc                 0.338   plogic/Mmux_player_pos_in[4]_X_6_o_Mux_40_o_81
+                                                       plogic/Mmux_player_pos_in[4]_X_6_o_Mux_40_o_4
+                                                       plogic/Mmux_player_pos_in[4]_X_6_o_Mux_40_o_2_f7
+    SLICE_X29Y27.B5      net (fanout=3)        0.553   plogic/player_pos_in[4]_X_6_o_Mux_40_o
+    SLICE_X29Y27.BMUX    Tilo                  0.313   plogic/n0126<6>
+                                                       plogic/Mmux_player_pos_in[9]_player_start[9]_mux_63_OUT1421
+    SLICE_X31Y28.B6      net (fanout=2)        0.594   plogic/Mmux_player_pos_in[9]_player_start[9]_mux_63_OUT142
+    SLICE_X31Y28.B       Tilo                  0.259   plogic/Mmux_GND_11_o_X_6_o_Mux_20_o_1917
+                                                       plogic/Mmux_player_pos_in[9]_player_start[9]_mux_63_OUT1211
+    SLICE_X30Y28.C2      net (fanout=3)        0.602   plogic/Mmux_player_pos_in[9]_player_start[9]_mux_63_OUT121
+    SLICE_X30Y28.CMUX    Tilo                  0.261   plogic/Mmux_GND_11_o_X_6_o_Mux_20_o_182
+                                                       plogic/Mmux_player_pos_in[9]_player_start[9]_mux_63_OUT16_SW0
+    SLICE_X33Y27.B6      net (fanout=1)        0.356   N8
+    SLICE_X33Y27.B       Tilo                  0.259   plogic/player_pos_out<8>
+                                                       plogic/Mmux_player_pos_in[9]_player_start[9]_mux_63_OUT16
+    SLICE_X30Y26.C4      net (fanout=1)        0.477   plogic/player_pos_in[9]_player_start[9]_mux_63_OUT<7>
+    SLICE_X30Y26.C       Tilo                  0.204   plogic/player_pos_out<6>
+                                                       plogic/player_pos_in[9]_player_end[9]_equal_66_o102
+    SLICE_X30Y26.A1      net (fanout=1)        0.474   plogic/player_pos_in[9]_player_end[9]_equal_66_o101
+    SLICE_X30Y26.CLK     Tas                   0.289   plogic/player_pos_out<6>
+                                                       plogic/player_pos_in[9]_player_end[9]_equal_66_o104
+                                                       plogic/win
+    -------------------------------------------------  ---------------------------
+    Total                                      9.785ns (3.305ns logic, 6.480ns route)
+                                                       (33.8% logic, 66.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point plogic/win (SLICE_X30Y26.A3), 18437 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     0.067ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               plogic/player_pos_out_6 (FF)
+  Destination:          plogic/win (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      9.898ns (Levels of Logic = 11)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: plogic/player_pos_out_6 to plogic/win
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X30Y26.BQ      Tcko                  0.447   plogic/player_pos_out<6>
+                                                       plogic/player_pos_out_6
+    SLICE_X31Y24.D2      net (fanout=204)      0.918   plogic/player_pos_out<6>
+    SLICE_X31Y24.D       Tilo                  0.259   plogic/n0116<3>
+                                                       plogic/Madd_n0116_Madd_xor<3>11
+    SLICE_X30Y25.C1      net (fanout=31)       0.768   plogic/n0116<3>
+    SLICE_X30Y25.CMUX    Tilo                  0.261   plogic/Mmux_GND_11_o_X_6_o_Mux_20_o_206
+                                                       plogic/Mmux_player_pos_in[4]_X_6_o_Mux_30_o_152_SW0
+    SLICE_X30Y25.A6      net (fanout=1)        0.621   N3483
+    SLICE_X30Y25.A       Tilo                  0.203   plogic/Mmux_GND_11_o_X_6_o_Mux_20_o_206
+                                                       plogic/Mmux_player_pos_in[4]_X_6_o_Mux_30_o_152
+    SLICE_X31Y23.D6      net (fanout=1)        0.501   plogic/Mmux_player_pos_in[4]_X_6_o_Mux_30_o_152
+    SLICE_X31Y23.D       Tilo                  0.259   plogic/Mmux_player_pos_in[4]_X_6_o_Mux_30_o_91
+                                                       plogic/Mmux_player_pos_in[4]_X_6_o_Mux_30_o_91
+    SLICE_X30Y24.D3      net (fanout=1)        0.518   plogic/Mmux_player_pos_in[4]_X_6_o_Mux_30_o_91
+    SLICE_X30Y24.CMUX    Topdc                 0.368   plogic/Mmux_player_pos_in[4]_X_6_o_Mux_30_o_81
+                                                       plogic/Mmux_player_pos_in[4]_X_6_o_Mux_30_o_4
+                                                       plogic/Mmux_player_pos_in[4]_X_6_o_Mux_30_o_2_f7
+    SLICE_X31Y28.A5      net (fanout=7)        0.808   plogic/player_pos_in[4]_X_6_o_Mux_30_o
+    SLICE_X31Y28.A       Tilo                  0.259   plogic/Mmux_GND_11_o_X_6_o_Mux_20_o_1917
+                                                       plogic/Mmux_player_pos_in[9]_player_start[9]_mux_63_OUT612
+    SLICE_X31Y28.C2      net (fanout=1)        0.427   plogic/Mmux_player_pos_in[9]_player_start[9]_mux_63_OUT612
+    SLICE_X31Y28.CMUX    Tilo                  0.313   plogic/Mmux_GND_11_o_X_6_o_Mux_20_o_1917
+                                                       plogic/Mmux_player_pos_in[9]_player_start[9]_mux_63_OUT613
+    SLICE_X31Y26.D6      net (fanout=18)       0.570   plogic/Mmux_player_pos_in[9]_player_start[9]_mux_63_OUT61
+    SLICE_X31Y26.D       Tilo                  0.259   plogic/player_pos_out<5>
+                                                       plogic/Mmux_player_pos_in[9]_player_start[9]_mux_63_OUT122_SW0
+    SLICE_X31Y26.C6      net (fanout=1)        0.118   N3419
+    SLICE_X31Y26.C       Tilo                  0.259   plogic/player_pos_out<5>
+                                                       plogic/Mmux_player_pos_in[9]_player_start[9]_mux_63_OUT122
+    SLICE_X31Y29.D5      net (fanout=1)        0.559   plogic/player_pos_in[9]_player_start[9]_mux_63_OUT<5>
+    SLICE_X31Y29.D       Tilo                  0.259   plogic/player_pos_out<3>
+                                                       plogic/player_pos_in[9]_player_end[9]_equal_66_o103
+    SLICE_X30Y26.A3      net (fanout=1)        0.655   plogic/player_pos_in[9]_player_end[9]_equal_66_o102
+    SLICE_X30Y26.CLK     Tas                   0.289   plogic/player_pos_out<6>
+                                                       plogic/player_pos_in[9]_player_end[9]_equal_66_o104
+                                                       plogic/win
+    -------------------------------------------------  ---------------------------
+    Total                                      9.898ns (3.435ns logic, 6.463ns route)
+                                                       (34.7% logic, 65.3% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.116ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               plogic/player_pos_out_8 (FF)
+  Destination:          plogic/win (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      9.829ns (Levels of Logic = 11)
+  Clock Path Skew:      -0.020ns (0.276 - 0.296)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: plogic/player_pos_out_8 to plogic/win
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X33Y27.CQ      Tcko                  0.391   plogic/player_pos_out<8>
+                                                       plogic/player_pos_out_8
+    SLICE_X31Y24.D1      net (fanout=18)       0.905   plogic/player_pos_out<8>
+    SLICE_X31Y24.D       Tilo                  0.259   plogic/n0116<3>
+                                                       plogic/Madd_n0116_Madd_xor<3>11
+    SLICE_X30Y25.C1      net (fanout=31)       0.768   plogic/n0116<3>
+    SLICE_X30Y25.CMUX    Tilo                  0.261   plogic/Mmux_GND_11_o_X_6_o_Mux_20_o_206
+                                                       plogic/Mmux_player_pos_in[4]_X_6_o_Mux_30_o_152_SW0
+    SLICE_X30Y25.A6      net (fanout=1)        0.621   N3483
+    SLICE_X30Y25.A       Tilo                  0.203   plogic/Mmux_GND_11_o_X_6_o_Mux_20_o_206
+                                                       plogic/Mmux_player_pos_in[4]_X_6_o_Mux_30_o_152
+    SLICE_X31Y23.D6      net (fanout=1)        0.501   plogic/Mmux_player_pos_in[4]_X_6_o_Mux_30_o_152
+    SLICE_X31Y23.D       Tilo                  0.259   plogic/Mmux_player_pos_in[4]_X_6_o_Mux_30_o_91
+                                                       plogic/Mmux_player_pos_in[4]_X_6_o_Mux_30_o_91
+    SLICE_X30Y24.D3      net (fanout=1)        0.518   plogic/Mmux_player_pos_in[4]_X_6_o_Mux_30_o_91
+    SLICE_X30Y24.CMUX    Topdc                 0.368   plogic/Mmux_player_pos_in[4]_X_6_o_Mux_30_o_81
+                                                       plogic/Mmux_player_pos_in[4]_X_6_o_Mux_30_o_4
+                                                       plogic/Mmux_player_pos_in[4]_X_6_o_Mux_30_o_2_f7
+    SLICE_X31Y28.A5      net (fanout=7)        0.808   plogic/player_pos_in[4]_X_6_o_Mux_30_o
+    SLICE_X31Y28.A       Tilo                  0.259   plogic/Mmux_GND_11_o_X_6_o_Mux_20_o_1917
+                                                       plogic/Mmux_player_pos_in[9]_player_start[9]_mux_63_OUT612
+    SLICE_X31Y28.C2      net (fanout=1)        0.427   plogic/Mmux_player_pos_in[9]_player_start[9]_mux_63_OUT612
+    SLICE_X31Y28.CMUX    Tilo                  0.313   plogic/Mmux_GND_11_o_X_6_o_Mux_20_o_1917
+                                                       plogic/Mmux_player_pos_in[9]_player_start[9]_mux_63_OUT613
+    SLICE_X31Y26.D6      net (fanout=18)       0.570   plogic/Mmux_player_pos_in[9]_player_start[9]_mux_63_OUT61
+    SLICE_X31Y26.D       Tilo                  0.259   plogic/player_pos_out<5>
+                                                       plogic/Mmux_player_pos_in[9]_player_start[9]_mux_63_OUT122_SW0
+    SLICE_X31Y26.C6      net (fanout=1)        0.118   N3419
+    SLICE_X31Y26.C       Tilo                  0.259   plogic/player_pos_out<5>
+                                                       plogic/Mmux_player_pos_in[9]_player_start[9]_mux_63_OUT122
+    SLICE_X31Y29.D5      net (fanout=1)        0.559   plogic/player_pos_in[9]_player_start[9]_mux_63_OUT<5>
+    SLICE_X31Y29.D       Tilo                  0.259   plogic/player_pos_out<3>
+                                                       plogic/player_pos_in[9]_player_end[9]_equal_66_o103
+    SLICE_X30Y26.A3      net (fanout=1)        0.655   plogic/player_pos_in[9]_player_end[9]_equal_66_o102
+    SLICE_X30Y26.CLK     Tas                   0.289   plogic/player_pos_out<6>
+                                                       plogic/player_pos_in[9]_player_end[9]_equal_66_o104
+                                                       plogic/win
+    -------------------------------------------------  ---------------------------
+    Total                                      9.829ns (3.379ns logic, 6.450ns route)
+                                                       (34.4% logic, 65.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.146ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               plogic/player_pos_out_0 (FF)
+  Destination:          plogic/win (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      9.799ns (Levels of Logic = 10)
+  Clock Path Skew:      -0.020ns (0.276 - 0.296)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: plogic/player_pos_out_0 to plogic/win
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X32Y27.BQ      Tcko                  0.408   plogic/player_pos_out<1>
+                                                       plogic/player_pos_out_0
+    SLICE_X28Y31.A5      net (fanout=85)       1.209   plogic/player_pos_out<0>
+    SLICE_X28Y31.AMUX    Topaa                 0.377   plogic/Maddsub_n0168_Madd1_cy<7>
+                                                       plogic/Maddsub_n0168_Madd1_lut<4>
+                                                       plogic/Maddsub_n0168_Madd1_cy<7>
+    SLICE_X28Y27.C5      net (fanout=1)        0.902   plogic/Maddsub_n0168_4
+    SLICE_X28Y27.CMUX    Topcc                 0.392   plogic/Maddsub_n0168_Madd_cy<5>
+                                                       plogic/Maddsub_n0168_Madd_lut<4>
+                                                       plogic/Maddsub_n0168_Madd_cy<5>
+    SLICE_X30Y27.D3      net (fanout=6)        0.823   plogic/n0121<4>
+    SLICE_X30Y27.D       Tilo                  0.203   plogic/Mmux_player_pos_in[4]_X_6_o_Mux_40_o_91
+                                                       plogic/Mmux_player_pos_in[4]_X_6_o_Mux_40_o_91
+    SLICE_X28Y29.D6      net (fanout=1)        0.585   plogic/Mmux_player_pos_in[4]_X_6_o_Mux_40_o_91
+    SLICE_X28Y29.CMUX    Topdc                 0.338   plogic/Mmux_player_pos_in[4]_X_6_o_Mux_40_o_81
+                                                       plogic/Mmux_player_pos_in[4]_X_6_o_Mux_40_o_4
+                                                       plogic/Mmux_player_pos_in[4]_X_6_o_Mux_40_o_2_f7
+    SLICE_X31Y28.A6      net (fanout=3)        0.595   plogic/player_pos_in[4]_X_6_o_Mux_40_o
+    SLICE_X31Y28.A       Tilo                  0.259   plogic/Mmux_GND_11_o_X_6_o_Mux_20_o_1917
+                                                       plogic/Mmux_player_pos_in[9]_player_start[9]_mux_63_OUT612
+    SLICE_X31Y28.C2      net (fanout=1)        0.427   plogic/Mmux_player_pos_in[9]_player_start[9]_mux_63_OUT612
+    SLICE_X31Y28.CMUX    Tilo                  0.313   plogic/Mmux_GND_11_o_X_6_o_Mux_20_o_1917
+                                                       plogic/Mmux_player_pos_in[9]_player_start[9]_mux_63_OUT613
+    SLICE_X31Y26.D6      net (fanout=18)       0.570   plogic/Mmux_player_pos_in[9]_player_start[9]_mux_63_OUT61
+    SLICE_X31Y26.D       Tilo                  0.259   plogic/player_pos_out<5>
+                                                       plogic/Mmux_player_pos_in[9]_player_start[9]_mux_63_OUT122_SW0
+    SLICE_X31Y26.C6      net (fanout=1)        0.118   N3419
+    SLICE_X31Y26.C       Tilo                  0.259   plogic/player_pos_out<5>
+                                                       plogic/Mmux_player_pos_in[9]_player_start[9]_mux_63_OUT122
+    SLICE_X31Y29.D5      net (fanout=1)        0.559   plogic/player_pos_in[9]_player_start[9]_mux_63_OUT<5>
+    SLICE_X31Y29.D       Tilo                  0.259   plogic/player_pos_out<3>
+                                                       plogic/player_pos_in[9]_player_end[9]_equal_66_o103
+    SLICE_X30Y26.A3      net (fanout=1)        0.655   plogic/player_pos_in[9]_player_end[9]_equal_66_o102
+    SLICE_X30Y26.CLK     Tas                   0.289   plogic/player_pos_out<6>
+                                                       plogic/player_pos_in[9]_player_end[9]_equal_66_o104
+                                                       plogic/win
+    -------------------------------------------------  ---------------------------
+    Total                                      9.799ns (3.356ns logic, 6.443ns route)
+                                                       (34.2% logic, 65.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point plogic/win (SLICE_X30Y26.A4), 7010 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     0.070ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               plogic/player_pos_out_6 (FF)
+  Destination:          plogic/win (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      9.895ns (Levels of Logic = 7)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: plogic/player_pos_out_6 to plogic/win
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X30Y26.BQ      Tcko                  0.447   plogic/player_pos_out<6>
+                                                       plogic/player_pos_out_6
+    SLICE_X23Y27.C3      net (fanout=204)      1.339   plogic/player_pos_out<6>
+    SLICE_X23Y27.C       Tilo                  0.259   plogic/Mmux_player_pos_in[4]_X_6_o_Mux_50_o_1917
+                                                       plogic/Mmux_player_pos_in[4]_X_6_o_Mux_50_o_1917
+    SLICE_X23Y24.B2      net (fanout=1)        0.919   plogic/Mmux_player_pos_in[4]_X_6_o_Mux_50_o_1917
+    SLICE_X23Y24.B       Tilo                  0.259   plogic/Mmux_player_pos_in[4]_X_6_o_Mux_30_o_1917
+                                                       plogic/Mmux_player_pos_in[4]_X_6_o_Mux_50_o_144
+    SLICE_X29Y22.D1      net (fanout=1)        1.121   plogic/Mmux_player_pos_in[4]_X_6_o_Mux_50_o_144
+    SLICE_X29Y22.D       Tilo                  0.259   plogic/Mmux_player_pos_in[4]_X_6_o_Mux_50_o_91
+                                                       plogic/Mmux_player_pos_in[4]_X_6_o_Mux_50_o_91
+    SLICE_X28Y26.D6      net (fanout=1)        0.748   plogic/Mmux_player_pos_in[4]_X_6_o_Mux_50_o_91
+    SLICE_X28Y26.CMUX    Topdc                 0.338   plogic/Mmux_player_pos_in[4]_X_6_o_Mux_50_o_81
+                                                       plogic/Mmux_player_pos_in[4]_X_6_o_Mux_50_o_4
+                                                       plogic/Mmux_player_pos_in[4]_X_6_o_Mux_50_o_2_f7
+    SLICE_X24Y31.D6      net (fanout=11)       1.036   plogic/player_pos_in[4]_X_6_o_Mux_50_o
+    SLICE_X24Y31.D       Tilo                  0.205   plogic/movementValid.player_pos_out<0>
+                                                       plogic/player_pos_in[9]_player_pos_in[4]_AND_62_o31
+    SLICE_X32Y27.C2      net (fanout=2)        1.319   plogic/player_pos_in[9]_player_pos_in[4]_AND_62_o_mmx_out3
+    SLICE_X32Y27.C       Tilo                  0.205   plogic/player_pos_out<1>
+                                                       plogic/Mmux_player_pos_in[9]_player_start[9]_mux_63_OUT4
+    SLICE_X30Y26.A4      net (fanout=1)        1.152   plogic/player_pos_in[9]_player_start[9]_mux_63_OUT<1>
+    SLICE_X30Y26.CLK     Tas                   0.289   plogic/player_pos_out<6>
+                                                       plogic/player_pos_in[9]_player_end[9]_equal_66_o104
+                                                       plogic/win
+    -------------------------------------------------  ---------------------------
+    Total                                      9.895ns (2.261ns logic, 7.634ns route)
+                                                       (22.8% logic, 77.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.137ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               plogic/player_pos_out_5 (FF)
+  Destination:          plogic/win (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      9.819ns (Levels of Logic = 8)
+  Clock Path Skew:      -0.009ns (0.147 - 0.156)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: plogic/player_pos_out_5 to plogic/win
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X31Y26.CQ      Tcko                  0.391   plogic/player_pos_out<5>
+                                                       plogic/player_pos_out_5
+    SLICE_X30Y23.D5      net (fanout=221)      1.042   plogic/player_pos_out<5>
+    SLICE_X30Y23.D       Tilo                  0.203   plogic/Mmux_player_pos_in[4]_X_6_o_Mux_50_o_15
+                                                       plogic/Mmux_player_pos_in[4]_X_6_o_Mux_50_o_15
+    SLICE_X30Y23.C4      net (fanout=1)        1.146   plogic/Mmux_player_pos_in[4]_X_6_o_Mux_50_o_15
+    SLICE_X30Y23.C       Tilo                  0.204   plogic/Mmux_player_pos_in[4]_X_6_o_Mux_50_o_15
+                                                       plogic/Mmux_player_pos_in[4]_X_6_o_Mux_50_o_11_SW0
+    SLICE_X28Y22.B5      net (fanout=1)        0.603   N3441
+    SLICE_X28Y22.B       Tilo                  0.205   plogic/Mmux_player_pos_in[4]_X_6_o_Mux_50_o_11
+                                                       plogic/Mmux_player_pos_in[4]_X_6_o_Mux_50_o_11
+    SLICE_X28Y22.C5      net (fanout=1)        0.456   plogic/Mmux_player_pos_in[4]_X_6_o_Mux_50_o_11
+    SLICE_X28Y22.CMUX    Tilo                  0.343   plogic/Mmux_player_pos_in[4]_X_6_o_Mux_50_o_11
+                                                       plogic/Mmux_player_pos_in[4]_X_6_o_Mux_50_o_7
+                                                       plogic/Mmux_player_pos_in[4]_X_6_o_Mux_50_o_6_f7
+    SLICE_X28Y26.C6      net (fanout=1)        0.677   plogic/Mmux_player_pos_in[4]_X_6_o_Mux_50_o_6_f7
+    SLICE_X28Y26.CMUX    Tilo                  0.343   plogic/Mmux_player_pos_in[4]_X_6_o_Mux_50_o_81
+                                                       plogic/Mmux_player_pos_in[4]_X_6_o_Mux_50_o_3
+                                                       plogic/Mmux_player_pos_in[4]_X_6_o_Mux_50_o_2_f7
+    SLICE_X24Y31.D6      net (fanout=11)       1.036   plogic/player_pos_in[4]_X_6_o_Mux_50_o
+    SLICE_X24Y31.D       Tilo                  0.205   plogic/movementValid.player_pos_out<0>
+                                                       plogic/player_pos_in[9]_player_pos_in[4]_AND_62_o31
+    SLICE_X32Y27.C2      net (fanout=2)        1.319   plogic/player_pos_in[9]_player_pos_in[4]_AND_62_o_mmx_out3
+    SLICE_X32Y27.C       Tilo                  0.205   plogic/player_pos_out<1>
+                                                       plogic/Mmux_player_pos_in[9]_player_start[9]_mux_63_OUT4
+    SLICE_X30Y26.A4      net (fanout=1)        1.152   plogic/player_pos_in[9]_player_start[9]_mux_63_OUT<1>
+    SLICE_X30Y26.CLK     Tas                   0.289   plogic/player_pos_out<6>
+                                                       plogic/player_pos_in[9]_player_end[9]_equal_66_o104
+                                                       plogic/win
+    -------------------------------------------------  ---------------------------
+    Total                                      9.819ns (2.388ns logic, 7.431ns route)
+                                                       (24.3% logic, 75.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.165ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               plogic/player_pos_out_6 (FF)
+  Destination:          plogic/win (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      9.800ns (Levels of Logic = 8)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: plogic/player_pos_out_6 to plogic/win
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X30Y26.BQ      Tcko                  0.447   plogic/player_pos_out<6>
+                                                       plogic/player_pos_out_6
+    SLICE_X30Y23.D4      net (fanout=204)      0.967   plogic/player_pos_out<6>
+    SLICE_X30Y23.D       Tilo                  0.203   plogic/Mmux_player_pos_in[4]_X_6_o_Mux_50_o_15
+                                                       plogic/Mmux_player_pos_in[4]_X_6_o_Mux_50_o_15
+    SLICE_X30Y23.C4      net (fanout=1)        1.146   plogic/Mmux_player_pos_in[4]_X_6_o_Mux_50_o_15
+    SLICE_X30Y23.C       Tilo                  0.204   plogic/Mmux_player_pos_in[4]_X_6_o_Mux_50_o_15
+                                                       plogic/Mmux_player_pos_in[4]_X_6_o_Mux_50_o_11_SW0
+    SLICE_X28Y22.B5      net (fanout=1)        0.603   N3441
+    SLICE_X28Y22.B       Tilo                  0.205   plogic/Mmux_player_pos_in[4]_X_6_o_Mux_50_o_11
+                                                       plogic/Mmux_player_pos_in[4]_X_6_o_Mux_50_o_11
+    SLICE_X28Y22.C5      net (fanout=1)        0.456   plogic/Mmux_player_pos_in[4]_X_6_o_Mux_50_o_11
+    SLICE_X28Y22.CMUX    Tilo                  0.343   plogic/Mmux_player_pos_in[4]_X_6_o_Mux_50_o_11
+                                                       plogic/Mmux_player_pos_in[4]_X_6_o_Mux_50_o_7
+                                                       plogic/Mmux_player_pos_in[4]_X_6_o_Mux_50_o_6_f7
+    SLICE_X28Y26.C6      net (fanout=1)        0.677   plogic/Mmux_player_pos_in[4]_X_6_o_Mux_50_o_6_f7
+    SLICE_X28Y26.CMUX    Tilo                  0.343   plogic/Mmux_player_pos_in[4]_X_6_o_Mux_50_o_81
+                                                       plogic/Mmux_player_pos_in[4]_X_6_o_Mux_50_o_3
+                                                       plogic/Mmux_player_pos_in[4]_X_6_o_Mux_50_o_2_f7
+    SLICE_X24Y31.D6      net (fanout=11)       1.036   plogic/player_pos_in[4]_X_6_o_Mux_50_o
+    SLICE_X24Y31.D       Tilo                  0.205   plogic/movementValid.player_pos_out<0>
+                                                       plogic/player_pos_in[9]_player_pos_in[4]_AND_62_o31
+    SLICE_X32Y27.C2      net (fanout=2)        1.319   plogic/player_pos_in[9]_player_pos_in[4]_AND_62_o_mmx_out3
+    SLICE_X32Y27.C       Tilo                  0.205   plogic/player_pos_out<1>
+                                                       plogic/Mmux_player_pos_in[9]_player_start[9]_mux_63_OUT4
+    SLICE_X30Y26.A4      net (fanout=1)        1.152   plogic/player_pos_in[9]_player_start[9]_mux_63_OUT<1>
+    SLICE_X30Y26.CLK     Tas                   0.289   plogic/player_pos_out<6>
+                                                       plogic/player_pos_in[9]_player_end[9]_equal_66_o104
+                                                       plogic/win
+    -------------------------------------------------  ---------------------------
+    Total                                      9.800ns (2.444ns logic, 7.356ns route)
+                                                       (24.9% logic, 75.1% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point plogic/step_D_1 (SLICE_X26Y36.CE), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.346ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               plogic/clk_debounce (FF)
+  Destination:          plogic/step_D_1 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.371ns (Levels of Logic = 0)
+  Clock Path Skew:      0.025ns (0.094 - 0.069)
+  Source Clock:         clk_BUFGP rising at 10.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: plogic/clk_debounce to plogic/step_D_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X21Y38.DQ      Tcko                  0.198   plogic/clk_debounce
+                                                       plogic/clk_debounce
+    SLICE_X26Y36.CE      net (fanout=5)        0.281   plogic/clk_debounce
+    SLICE_X26Y36.CLK     Tckce       (-Th)     0.108   plogic/step_D<1>
+                                                       plogic/step_D_1
+    -------------------------------------------------  ---------------------------
+    Total                                      0.371ns (0.090ns logic, 0.281ns route)
+                                                       (24.3% logic, 75.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point plogic/step_R_1 (SLICE_X26Y36.CE), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.350ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               plogic/clk_debounce (FF)
+  Destination:          plogic/step_R_1 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.375ns (Levels of Logic = 0)
+  Clock Path Skew:      0.025ns (0.094 - 0.069)
+  Source Clock:         clk_BUFGP rising at 10.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: plogic/clk_debounce to plogic/step_R_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X21Y38.DQ      Tcko                  0.198   plogic/clk_debounce
+                                                       plogic/clk_debounce
+    SLICE_X26Y36.CE      net (fanout=5)        0.281   plogic/clk_debounce
+    SLICE_X26Y36.CLK     Tckce       (-Th)     0.104   plogic/step_D<1>
+                                                       plogic/step_R_1
+    -------------------------------------------------  ---------------------------
+    Total                                      0.375ns (0.094ns logic, 0.281ns route)
+                                                       (25.1% logic, 74.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point plogic/step_C_1 (SLICE_X26Y36.CE), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.352ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               plogic/clk_debounce (FF)
+  Destination:          plogic/step_C_1 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.377ns (Levels of Logic = 0)
+  Clock Path Skew:      0.025ns (0.094 - 0.069)
+  Source Clock:         clk_BUFGP rising at 10.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: plogic/clk_debounce to plogic/step_C_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X21Y38.DQ      Tcko                  0.198   plogic/clk_debounce
+                                                       plogic/clk_debounce
+    SLICE_X26Y36.CE      net (fanout=5)        0.281   plogic/clk_debounce
+    SLICE_X26Y36.CLK     Tckce       (-Th)     0.102   plogic/step_D<1>
+                                                       plogic/step_C_1
+    -------------------------------------------------  ---------------------------
+    Total                                      0.377ns (0.096ns logic, 0.281ns route)
+                                                       (25.5% logic, 74.5% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 8.270ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 1.730ns (578.035MHz) (Tbcper_I)
+  Physical resource: clk_BUFGP/BUFG/I0
+  Logical resource: clk_BUFGP/BUFG/I0
+  Location pin: BUFGMUX_X3Y13.I0
+  Clock network: clk_BUFGP/IBUFG
+--------------------------------------------------------------------------------
+Slack: 9.000ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 1.000ns (1000.000MHz) (Tcp)
+  Physical resource: plogic/step_D<1>/CLK
+  Logical resource: plogic/Mshreg_step_L_1/CLK
+  Location pin: SLICE_X26Y36.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 9.000ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 1.000ns (1000.000MHz) (Tcp)
+  Physical resource: plogic/step_D<1>/CLK
+  Logical resource: plogic/Mshreg_step_U_1/CLK
+  Location pin: SLICE_X26Y36.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    9.933|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 196810 paths, 0 nets, and 2437 connections
+
+Design statistics:
+   Minimum period:   9.933ns{1}   (Maximum frequency: 100.675MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Mon Mar 12 15:47:18 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 252 MB
+
+
+

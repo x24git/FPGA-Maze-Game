@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/Lab4/MazeGame/hvsync_generator.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/Lab4/MazeGame/hvsync_generator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 hvsync_generator.ngc hvsync_generator.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o hvsync_generator_map.ncd hvsync_generator.ngd hvsync_generator.pcf 
+par -w -intstyle ise -ol high -mt off hvsync_generator_map.ncd hvsync_generator.ncd hvsync_generator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml hvsync_generator.twx hvsync_generator.ncd -o hvsync_generator.twr hvsync_generator.pcf 

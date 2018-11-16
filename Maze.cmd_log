@@ -1,0 +1,484 @@
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/152/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/152/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/152/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/152/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/152/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/152/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/152/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/152/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/152/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/152/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/152/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/152/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/152/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/152/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/152/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/152/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/152/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/152/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/152/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/152/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/152/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/152/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/152/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/152/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/152/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/152/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/152/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/152/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/152/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/152/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/152/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/152/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/152/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/152/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/152/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/152/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/152/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/152/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/152/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/152/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/152/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/152/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/152/Desktop/MazeGame/Maze.syr" 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/152/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/152/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/152/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/152/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/152/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+xst -intstyle ise -ifn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.xst" -ofn "C:/Users/TEMP.CS152A-01.000/Desktop/MazeGame/Maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 Maze.ngc Maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Maze_map.ncd Maze.ngd Maze.pcf 
+par -w -intstyle ise -ol high -mt off Maze_map.ncd Maze.ncd Maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Maze.twx Maze.ncd -o Maze.twr Maze.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f Maze.ut Maze.ncd 

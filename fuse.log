@@ -1,0 +1,21 @@
+Running: C:\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/152/Desktop/MazeGame/maze_selector_test_isim_beh.exe -prj C:/Users/152/Desktop/MazeGame/maze_selector_test_beh.prj work.maze_selector_test work.glbl 
+ISim P.68d (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/152/Desktop/MazeGame/maze_selector.v" into library work
+Analyzing Verilog file "C:/Users/152/Desktop/MazeGame/maze_selector_test.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.6/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:189 - "C:/Users/152/Desktop/MazeGame/maze_selector_test.v" Line 41: Size mismatch in connection of port <player_start>. Formal port size is 10-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/152/Desktop/MazeGame/maze_selector_test.v" Line 42: Size mismatch in connection of port <player_end>. Formal port size is 10-bit while actual signal size is 1-bit.
+Completed static elaboration
+Compiling module maze_selector
+Compiling module maze_selector_test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 3 Verilog Units
+Built simulation executable C:/Users/152/Desktop/MazeGame/maze_selector_test_isim_beh.exe
+Fuse Memory Usage: 28588 KB
+Fuse CPU Usage: 451 ms

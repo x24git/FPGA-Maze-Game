@@ -1,0 +1,1597 @@
+Release 14.6 - xst P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: Maze.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Maze.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Maze"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : Maze
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\hvsync_generator.v" into library work
+Parsing module <hvsync_generator>.
+Analyzing Verilog file "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\score.v" into library work
+Parsing module <score>.
+Analyzing Verilog file "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\player_logic.v" into library work
+Parsing module <player_logic>.
+Parsing verilog file "maze_parameters.v" included at line 39.
+Analyzing Verilog file "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\maze_selector.v" into library work
+Parsing module <maze_selector>.
+Parsing verilog file "maze_parameters.v" included at line 28.
+Analyzing Verilog file "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\display.v" into library work
+Parsing module <display>.
+Parsing verilog file "maze_parameters.v" included at line 23.
+Analyzing Verilog file "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\Maze.v" into library work
+Parsing module <Maze>.
+Parsing verilog file "maze_parameters.v" included at line 24.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Maze>.
+
+Elaborating module <BUF>.
+
+Elaborating module <maze_selector>.
+WARNING:HDLCompiler:872 - "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\maze_selector.v" Line 55: Using initial value of player_start_1 since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\maze_selector.v" Line 56: Using initial value of player_end_1 since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\maze_selector.v" Line 81: Using initial value of player_start_2 since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\maze_selector.v" Line 82: Using initial value of player_end_2 since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\maze_selector.v" Line 107: Using initial value of player_start_3 since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\maze_selector.v" Line 108: Using initial value of player_end_3 since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\maze_selector.v" Line 133: Using initial value of player_start_4 since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\maze_selector.v" Line 134: Using initial value of player_end_4 since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\maze_selector.v" Line 159: Using initial value of player_start_5 since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\maze_selector.v" Line 160: Using initial value of player_end_5 since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\maze_selector.v" Line 185: Using initial value of player_start_6 since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\maze_selector.v" Line 186: Using initial value of player_end_6 since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\maze_selector.v" Line 211: Using initial value of player_start_7 since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\maze_selector.v" Line 212: Using initial value of player_end_7 since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\maze_selector.v" Line 237: Using initial value of player_start_8 since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\maze_selector.v" Line 238: Using initial value of player_end_8 since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\maze_selector.v" Line 262: Using initial value of player_start_default since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\maze_selector.v" Line 263: Using initial value of player_end_default since it is never assigned
+
+Elaborating module <display>.
+
+Elaborating module <hvsync_generator>.
+WARNING:HDLCompiler:413 - "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\hvsync_generator.v" Line 35: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\hvsync_generator.v" Line 45: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\display.v" Line 99: Result of 32-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\display.v" Line 100: Result of 10-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\display.v" Line 101: Result of 32-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\display.v" Line 102: Result of 32-bit expression is truncated to fit in 3-bit target.
+
+Elaborating module <player_logic>.
+WARNING:HDLCompiler:413 - "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\player_logic.v" Line 54: Result of 19-bit expression is truncated to fit in 18-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\player_logic.v" Line 139: Result of 32-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:81 - "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\player_logic.v" Line 131: player_pos_out may be used uninitialized in static subprogram movementValid and create unintended latch behavior
+WARNING:HDLCompiler:413 - "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\player_logic.v" Line 136: Result of 32-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\player_logic.v" Line 137: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\player_logic.v" Line 138: Result of 6-bit expression is truncated to fit in 5-bit target.
+
+Elaborating module <score>.
+WARNING:HDLCompiler:413 - "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\score.v" Line 40: Result of 22-bit expression is truncated to fit in 21-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\score.v" Line 45: Result of 29-bit expression is truncated to fit in 28-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\score.v" Line 64: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\score.v" Line 69: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\score.v" Line 78: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\score.v" Line 83: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\score.v" Line 88: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\score.v" Line 93: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\score.v" Line 111: Result of 3-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:634 - "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\Maze.v" Line 80: Net <reset> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Maze>.
+    Related source file is "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\Maze.v".
+        maze_width = 20
+        maze_height = 20
+        maze_dim = 19
+        maze_flat = 399
+        maze_player_dim = 9
+        maze_player_dim_split = 4
+WARNING:Xst:653 - Signal <reset> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 28-bit register for signal <clk_div>.
+    Found 28-bit adder for signal <clk_div[27]_GND_1_o_add_1_OUT> created at line 50.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  28 D-type flip-flop(s).
+Unit <Maze> synthesized.
+
+Synthesizing Unit <maze_selector>.
+    Related source file is "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\maze_selector.v".
+        maze_width = 20
+        maze_height = 20
+        maze_dim = 19
+        maze_flat = 399
+        maze_player_dim = 9
+        maze_player_dim_split = 4
+    Found 10-bit register for signal <player_end>.
+    Found 400-bit register for signal <maze>.
+    Summary:
+	inferred 410 D-type flip-flop(s).
+Unit <maze_selector> synthesized.
+
+Synthesizing Unit <display>.
+    Related source file is "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\display.v".
+        maze_width = 20
+        maze_height = 20
+        maze_dim = 19
+        maze_flat = 399
+        maze_player_dim = 9
+        maze_player_dim_split = 4
+WARNING:Xst:647 - Input <clk<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clk<21:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clk<27:23>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 3-bit register for signal <vga_r>.
+    Found 2-bit register for signal <vga_b>.
+    Found 1-bit register for signal <flash>.
+    Found 3-bit register for signal <vga_g>.
+    Found 11-bit subtractor for signal <GND_4_o_GND_4_o_sub_6_OUT> created at line 99.
+    Found 11-bit subtractor for signal <GND_4_o_GND_4_o_sub_10_OUT> created at line 101.
+    Found 3-bit subtractor for signal <GND_4_o_GND_4_o_sub_12_OUT<2:0>> created at line 101.
+    Found 3-bit subtractor for signal <GND_4_o_GND_4_o_sub_15_OUT<2:0>> created at line 102.
+    Found 5x5-bit multiplier for signal <GND_4_o_PWR_4_o_MuLt_8_OUT> created at line 101.
+    Found 1-bit 20-to-1 multiplexer for signal <CounterY[9]_X_4_o_Mux_23_o> created at line 111.
+    Found 1-bit 20-to-1 multiplexer for signal <CounterY[9]_X_4_o_Mux_24_o> created at line 111.
+    Found 1-bit 20-to-1 multiplexer for signal <CounterY[9]_X_4_o_Mux_25_o> created at line 111.
+    Found 1-bit 20-to-1 multiplexer for signal <CounterY[9]_X_4_o_Mux_26_o> created at line 111.
+    Found 1-bit 20-to-1 multiplexer for signal <CounterY[9]_X_4_o_Mux_27_o> created at line 111.
+    Found 1-bit 20-to-1 multiplexer for signal <CounterY[9]_X_4_o_Mux_28_o> created at line 111.
+    Found 1-bit 20-to-1 multiplexer for signal <CounterY[9]_X_4_o_Mux_29_o> created at line 111.
+    Found 1-bit 20-to-1 multiplexer for signal <CounterY[9]_X_4_o_Mux_30_o> created at line 111.
+    Found 1-bit 20-to-1 multiplexer for signal <CounterY[9]_X_4_o_Mux_31_o> created at line 111.
+    Found 1-bit 20-to-1 multiplexer for signal <CounterY[9]_X_4_o_Mux_32_o> created at line 111.
+    Found 1-bit 20-to-1 multiplexer for signal <CounterY[9]_X_4_o_Mux_33_o> created at line 111.
+    Found 1-bit 20-to-1 multiplexer for signal <CounterY[9]_X_4_o_Mux_34_o> created at line 111.
+    Found 1-bit 20-to-1 multiplexer for signal <CounterY[9]_X_4_o_Mux_35_o> created at line 111.
+    Found 1-bit 20-to-1 multiplexer for signal <CounterY[9]_X_4_o_Mux_36_o> created at line 111.
+    Found 1-bit 20-to-1 multiplexer for signal <CounterY[9]_X_4_o_Mux_37_o> created at line 111.
+    Found 1-bit 20-to-1 multiplexer for signal <CounterY[9]_X_4_o_Mux_38_o> created at line 111.
+    Found 1-bit 20-to-1 multiplexer for signal <CounterY[9]_X_4_o_Mux_39_o> created at line 111.
+    Found 1-bit 20-to-1 multiplexer for signal <CounterY[9]_X_4_o_Mux_40_o> created at line 111.
+    Found 1-bit 20-to-1 multiplexer for signal <CounterY[9]_X_4_o_Mux_41_o> created at line 111.
+    Found 1-bit 20-to-1 multiplexer for signal <CounterY[9]_X_4_o_Mux_42_o> created at line 111.
+    Found 1-bit 20-to-1 multiplexer for signal <GND_4_o_X_4_o_Mux_43_o> created at line 111.
+    Found 10-bit comparator greater for signal <GND_4_o_CounterX[9]_LessThan_4_o> created at line 98
+    Found 10-bit comparator greater for signal <CounterX[9]_PWR_4_o_LessThan_5_o> created at line 98
+    Found 5-bit comparator equal for signal <player_pos[9]_GND_4_o_equal_16_o> created at line 103
+    Found 5-bit comparator equal for signal <player_pos[4]_CounterY[9]_equal_17_o> created at line 103
+    Found 3-bit comparator greater for signal <GND_4_o_GND_4_o_LessThan_18_o> created at line 103
+    Found 3-bit comparator greater for signal <GND_4_o_PWR_4_o_LessThan_19_o> created at line 103
+    Found 3-bit comparator greater for signal <GND_4_o_GND_4_o_LessThan_20_o> created at line 103
+    Found 3-bit comparator greater for signal <GND_4_o_PWR_4_o_LessThan_21_o> created at line 103
+    Found 5-bit comparator equal for signal <GND_4_o_player_end[9]_equal_22_o> created at line 107
+    Found 5-bit comparator equal for signal <CounterY[9]_player_end[4]_equal_23_o> created at line 107
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred   9 D-type flip-flop(s).
+	inferred  10 Comparator(s).
+	inferred  24 Multiplexer(s).
+Unit <display> synthesized.
+
+Synthesizing Unit <hvsync_generator>.
+    Related source file is "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\hvsync_generator.v".
+    Found 10-bit register for signal <CounterY>.
+    Found 1-bit register for signal <vga_HS>.
+    Found 1-bit register for signal <vga_VS>.
+    Found 1-bit register for signal <inDisplayArea>.
+    Found 10-bit register for signal <CounterX>.
+    Found 10-bit adder for signal <CounterX[9]_GND_5_o_add_1_OUT> created at line 35.
+    Found 10-bit adder for signal <CounterY[9]_GND_5_o_add_6_OUT> created at line 45.
+    Found 10-bit comparator greater for signal <PWR_5_o_CounterX[9]_LessThan_12_o> created at line 50
+    Found 10-bit comparator greater for signal <CounterX[9]_PWR_5_o_LessThan_13_o> created at line 50
+    Found 10-bit comparator greater for signal <CounterX[9]_PWR_5_o_LessThan_17_o> created at line 59
+    Found 10-bit comparator greater for signal <CounterY[9]_GND_5_o_LessThan_18_o> created at line 59
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  23 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+Unit <hvsync_generator> synthesized.
+
+Synthesizing Unit <div_32u_5u>.
+    Related source file is "".
+    Found 37-bit adder for signal <GND_6_o_b[4]_add_1_OUT> created at line 0.
+    Found 36-bit adder for signal <GND_6_o_b[4]_add_3_OUT> created at line 0.
+    Found 35-bit adder for signal <GND_6_o_b[4]_add_5_OUT> created at line 0.
+    Found 34-bit adder for signal <GND_6_o_b[4]_add_7_OUT> created at line 0.
+    Found 33-bit adder for signal <GND_6_o_b[4]_add_9_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_b[4]_add_11_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_6_o_add_13_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_6_o_add_15_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_6_o_add_17_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_6_o_add_19_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_6_o_add_21_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_6_o_add_23_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_6_o_add_25_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_6_o_add_27_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_6_o_add_29_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_6_o_add_31_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_6_o_add_33_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_6_o_add_35_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_6_o_add_37_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_6_o_add_39_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_6_o_add_41_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_6_o_add_43_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_6_o_add_45_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_6_o_add_47_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_6_o_add_49_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_6_o_add_51_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_6_o_add_53_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_6_o_add_55_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_6_o_add_57_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_6_o_add_59_OUT[31:0]> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_6_o_add_61_OUT[31:0]> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_6_o_add_63_OUT[31:0]> created at line 0.
+    Found 37-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 36-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 35-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 34-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 33-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0016> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0017> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0018> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0019> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0020> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0021> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0022> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0023> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0024> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0025> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0026> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0027> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0028> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0029> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0030> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0031> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0032> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0033> created at line 0
+    Summary:
+	inferred  32 Adder/Subtractor(s).
+	inferred  33 Comparator(s).
+	inferred 931 Multiplexer(s).
+Unit <div_32u_5u> synthesized.
+
+Synthesizing Unit <div_10u_5u>.
+    Related source file is "".
+    Found 15-bit adder for signal <GND_7_o_b[4]_add_1_OUT> created at line 0.
+    Found 14-bit adder for signal <GND_7_o_b[4]_add_3_OUT> created at line 0.
+    Found 13-bit adder for signal <GND_7_o_b[4]_add_5_OUT> created at line 0.
+    Found 12-bit adder for signal <GND_7_o_b[4]_add_7_OUT> created at line 0.
+    Found 11-bit adder for signal <GND_7_o_b[4]_add_9_OUT> created at line 0.
+    Found 10-bit adder for signal <a[9]_b[4]_add_11_OUT> created at line 0.
+    Found 10-bit adder for signal <a[9]_GND_7_o_add_13_OUT> created at line 0.
+    Found 10-bit adder for signal <a[9]_GND_7_o_add_15_OUT[9:0]> created at line 0.
+    Found 10-bit adder for signal <a[9]_GND_7_o_add_17_OUT[9:0]> created at line 0.
+    Found 10-bit adder for signal <a[9]_GND_7_o_add_19_OUT[9:0]> created at line 0.
+    Found 15-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 13-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 12-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 11-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Summary:
+	inferred  10 Adder/Subtractor(s).
+	inferred  11 Comparator(s).
+	inferred  73 Multiplexer(s).
+Unit <div_10u_5u> synthesized.
+
+Synthesizing Unit <div_32u_3u>.
+    Related source file is "".
+    Found 35-bit adder for signal <GND_9_o_b[2]_add_1_OUT> created at line 0.
+    Found 34-bit adder for signal <GND_9_o_b[2]_add_3_OUT> created at line 0.
+    Found 33-bit adder for signal <GND_9_o_b[2]_add_5_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_b[2]_add_7_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_9_o_add_9_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_9_o_add_11_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_9_o_add_13_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_9_o_add_15_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_9_o_add_17_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_9_o_add_19_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_9_o_add_21_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_9_o_add_23_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_9_o_add_25_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_9_o_add_27_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_9_o_add_29_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_9_o_add_31_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_9_o_add_33_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_9_o_add_35_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_9_o_add_37_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_9_o_add_39_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_9_o_add_41_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_9_o_add_43_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_9_o_add_45_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_9_o_add_47_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_9_o_add_49_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_9_o_add_51_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_9_o_add_53_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_9_o_add_55_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_9_o_add_57_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_9_o_add_59_OUT[31:0]> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_9_o_add_61_OUT[31:0]> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_9_o_add_63_OUT[31:0]> created at line 0.
+    Found 35-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 34-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 33-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0016> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0017> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0018> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0019> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0020> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0021> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0022> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0023> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0024> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0025> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0026> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0027> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0028> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0029> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0030> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0031> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0032> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0033> created at line 0
+    Summary:
+	inferred  32 Adder/Subtractor(s).
+	inferred  33 Comparator(s).
+	inferred 931 Multiplexer(s).
+Unit <div_32u_3u> synthesized.
+
+Synthesizing Unit <div_10u_3u>.
+    Related source file is "".
+    Found 13-bit adder for signal <GND_10_o_b[2]_add_1_OUT> created at line 0.
+    Found 12-bit adder for signal <GND_10_o_b[2]_add_3_OUT> created at line 0.
+    Found 11-bit adder for signal <GND_10_o_b[2]_add_5_OUT> created at line 0.
+    Found 10-bit adder for signal <a[9]_b[2]_add_7_OUT> created at line 0.
+    Found 10-bit adder for signal <a[9]_GND_10_o_add_9_OUT> created at line 0.
+    Found 10-bit adder for signal <a[9]_GND_10_o_add_11_OUT> created at line 0.
+    Found 10-bit adder for signal <a[9]_GND_10_o_add_13_OUT> created at line 0.
+    Found 10-bit adder for signal <a[9]_GND_10_o_add_15_OUT[9:0]> created at line 0.
+    Found 10-bit adder for signal <a[9]_GND_10_o_add_17_OUT[9:0]> created at line 0.
+    Found 10-bit adder for signal <a[9]_GND_10_o_add_19_OUT[9:0]> created at line 0.
+    Found 13-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 12-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 11-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Summary:
+	inferred  10 Adder/Subtractor(s).
+	inferred  11 Comparator(s).
+	inferred  73 Multiplexer(s).
+Unit <div_10u_3u> synthesized.
+
+Synthesizing Unit <player_logic>.
+    Related source file is "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\player_logic.v".
+        maze_width = 20
+        maze_height = 20
+        maze_dim = 19
+        maze_flat = 399
+        maze_player_dim = 9
+        maze_player_dim_split = 4
+    Found 1-bit register for signal <clk_debounce>.
+    Found 1-bit register for signal <clk_debounce_d>.
+    Found 3-bit register for signal <step_U>.
+    Found 3-bit register for signal <step_L>.
+    Found 3-bit register for signal <step_D>.
+    Found 3-bit register for signal <step_R>.
+    Found 3-bit register for signal <step_C>.
+    Found 10-bit register for signal <player_pos_out>.
+    Found 1-bit register for signal <rst>.
+    Found 1-bit register for signal <move>.
+    Found 10-bit register for signal <movementValid.player_pos_out>.
+    Found 1-bit register for signal <win>.
+    Found 18-bit register for signal <clk_debouncedv>.
+    Found 18-bit adder for signal <clk_debouncedv[17]_GND_11_o_add_1_OUT> created at line 54.
+    Found 10-bit adder for signal <n0112> created at line 143.
+    Found 10-bit adder for signal <n0116> created at line 143.
+    Found 5-bit adder for signal <player_pos_in[4]_GND_11_o_add_35_OUT> created at line 137.
+    Found 10-bit adder for signal <n0121> created at line 143.
+    Found 5-bit adder for signal <player_pos_in[9]_GND_11_o_add_45_OUT> created at line 138.
+    Found 10-bit adder for signal <n0126> created at line 143.
+    Found 5-bit subtractor for signal <GND_11_o_GND_11_o_sub_16_OUT<4:0>> created at line 139.
+    Found 5-bit subtractor for signal <GND_11_o_GND_11_o_sub_26_OUT<4:0>> created at line 136.
+    Found 5x5-bit multiplier for signal <n0160> created at line 143.
+    Found 5x5-bit multiplier for signal <n0168> created at line 143.
+    Found 5x5-bit multiplier for signal <n0163> created at line 143.
+    Found 1-bit 400-to-1 multiplexer for signal <GND_11_o_X_6_o_Mux_20_o> created at line 143.
+    Found 1-bit 400-to-1 multiplexer for signal <player_pos_in[4]_X_6_o_Mux_30_o> created at line 143.
+    Found 1-bit 400-to-1 multiplexer for signal <player_pos_in[4]_X_6_o_Mux_40_o> created at line 143.
+    Found 1-bit 400-to-1 multiplexer for signal <player_pos_in[4]_X_6_o_Mux_50_o> created at line 143.
+    Found 5-bit comparator greater for signal <GND_11_o_PWR_12_o_LessThan_18_o> created at line 141
+    Found 5-bit comparator greater for signal <GND_11_o_PWR_12_o_LessThan_27_o> created at line 141
+    Found 5-bit comparator greater for signal <player_pos_in[9]_PWR_12_o_LessThan_37_o> created at line 141
+    Found 5-bit comparator greater for signal <player_pos_in[4]_PWR_12_o_LessThan_38_o> created at line 141
+    Found 5-bit comparator greater for signal <player_pos_in[9]_PWR_12_o_LessThan_47_o> created at line 141
+    Found 5-bit comparator greater for signal <player_pos_in[4]_PWR_12_o_LessThan_48_o> created at line 141
+    Found 10-bit comparator not equal for signal <n0067> created at line 143
+    Found 10-bit comparator equal for signal <player_pos_in[9]_player_end[9]_equal_66_o> created at line 121
+    Summary:
+	inferred   3 Multiplier(s).
+	inferred   9 Adder/Subtractor(s).
+	inferred  58 D-type flip-flop(s).
+	inferred   8 Comparator(s).
+	inferred  22 Multiplexer(s).
+Unit <player_logic> synthesized.
+
+Synthesizing Unit <score>.
+    Related source file is "C:\Users\TEMP.CS152A-01.000\Desktop\MazeGame\score.v".
+    Found 1-bit register for signal <clk_disp>.
+    Found 28-bit register for signal <clk_onedv>.
+    Found 1-bit register for signal <clk_one>.
+    Found 16-bit register for signal <score>.
+    Found 1-bit register for signal <first_move>.
+    Found 1-bit register for signal <move_on<0>>.
+    Found 1-bit register for signal <time_on<0>>.
+    Found 2-bit register for signal <counter>.
+    Found 4-bit register for signal <anode>.
+    Found 8-bit register for signal <cathode>.
+    Found 21-bit register for signal <clk_dispdv>.
+    Found 21-bit adder for signal <clk_dispdv[20]_GND_12_o_add_1_OUT> created at line 40.
+    Found 28-bit adder for signal <clk_onedv[27]_GND_12_o_add_4_OUT> created at line 45.
+    Found 2-bit adder for signal <counter[1]_GND_12_o_add_37_OUT> created at line 111.
+    Found 4-bit subtractor for signal <GND_12_o_GND_12_o_sub_14_OUT<3:0>> created at line 64.
+    Found 4-bit subtractor for signal <GND_12_o_GND_12_o_sub_16_OUT<3:0>> created at line 69.
+    Found 4-bit subtractor for signal <GND_12_o_GND_12_o_sub_22_OUT<3:0>> created at line 78.
+    Found 4-bit subtractor for signal <GND_12_o_GND_12_o_sub_24_OUT<3:0>> created at line 83.
+    Found 4-bit subtractor for signal <GND_12_o_GND_12_o_sub_26_OUT<3:0>> created at line 88.
+    Found 4-bit subtractor for signal <GND_12_o_GND_12_o_sub_28_OUT<3:0>> created at line 93.
+    Found 4x4-bit Read Only RAM for signal <counter[1]_GND_12_o_wide_mux_38_OUT>
+    Found 1-bit 4-to-1 multiplexer for signal <counter[1]_score[15]_wide_mux_39_OUT<3>> created at line 131.
+    Found 1-bit 4-to-1 multiplexer for signal <counter[1]_score[15]_wide_mux_39_OUT<2>> created at line 131.
+    Found 1-bit 4-to-1 multiplexer for signal <counter[1]_score[15]_wide_mux_39_OUT<1>> created at line 131.
+    Found 1-bit 4-to-1 multiplexer for signal <counter[1]_score[15]_wide_mux_39_OUT<0>> created at line 131.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   9 Adder/Subtractor(s).
+	inferred  84 D-type flip-flop(s).
+	inferred  19 Multiplexer(s).
+Unit <score> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 4x4-bit single-port Read Only RAM                     : 1
+# Multipliers                                          : 4
+ 5x5-bit multiplier                                    : 4
+# Adders/Subtractors                                   : 109
+ 10-bit adder                                          : 18
+ 11-bit adder                                          : 2
+ 11-bit subtractor                                     : 2
+ 12-bit adder                                          : 2
+ 13-bit adder                                          : 2
+ 14-bit adder                                          : 1
+ 15-bit adder                                          : 1
+ 18-bit adder                                          : 1
+ 2-bit adder                                           : 1
+ 21-bit adder                                          : 1
+ 28-bit adder                                          : 2
+ 3-bit subtractor                                      : 2
+ 32-bit adder                                          : 56
+ 33-bit adder                                          : 2
+ 34-bit adder                                          : 2
+ 35-bit adder                                          : 2
+ 36-bit adder                                          : 1
+ 37-bit adder                                          : 1
+ 4-bit subtractor                                      : 6
+ 5-bit adder                                           : 2
+ 5-bit subtractor                                      : 2
+# Registers                                            : 36
+ 1-bit register                                        : 14
+ 10-bit register                                       : 5
+ 16-bit register                                       : 1
+ 18-bit register                                       : 1
+ 2-bit register                                        : 2
+ 21-bit register                                       : 1
+ 28-bit register                                       : 2
+ 3-bit register                                        : 7
+ 4-bit register                                        : 1
+ 400-bit register                                      : 1
+ 8-bit register                                        : 1
+# Comparators                                          : 110
+ 10-bit comparator equal                               : 1
+ 10-bit comparator greater                             : 6
+ 10-bit comparator lessequal                           : 14
+ 10-bit comparator not equal                           : 1
+ 11-bit comparator lessequal                           : 2
+ 12-bit comparator lessequal                           : 2
+ 13-bit comparator lessequal                           : 2
+ 14-bit comparator lessequal                           : 1
+ 15-bit comparator lessequal                           : 1
+ 3-bit comparator greater                              : 4
+ 32-bit comparator lessequal                           : 58
+ 33-bit comparator lessequal                           : 2
+ 34-bit comparator lessequal                           : 2
+ 35-bit comparator lessequal                           : 2
+ 36-bit comparator lessequal                           : 1
+ 37-bit comparator lessequal                           : 1
+ 5-bit comparator equal                                : 4
+ 5-bit comparator greater                              : 6
+# Multiplexers                                         : 2073
+ 1-bit 2-to-1 multiplexer                              : 2003
+ 1-bit 20-to-1 multiplexer                             : 21
+ 1-bit 4-to-1 multiplexer                              : 4
+ 1-bit 400-to-1 multiplexer                            : 4
+ 10-bit 2-to-1 multiplexer                             : 22
+ 16-bit 2-to-1 multiplexer                             : 8
+ 32-bit 2-to-1 multiplexer                             : 6
+ 8-bit 2-to-1 multiplexer                              : 5
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <player_end_1> in Unit <select> is equivalent to the following 3 FFs/Latches, which will be removed : <player_end_4> <player_end_6> <player_end_9> 
+INFO:Xst:2261 - The FF/Latch <maze_89> in Unit <select> is equivalent to the following FF/Latch, which will be removed : <maze_314> 
+INFO:Xst:2261 - The FF/Latch <maze_270> in Unit <select> is equivalent to the following FF/Latch, which will be removed : <maze_327> 
+INFO:Xst:2261 - The FF/Latch <player_end_0> in Unit <select> is equivalent to the following 27 FFs/Latches, which will be removed : <maze_52> <maze_54> <maze_56> <maze_58> <maze_74> <maze_86> <maze_88> <maze_92> <maze_96> <maze_98> <maze_128> <maze_130> <maze_132> <maze_164> <maze_170> <maze_202> <maze_204> <maze_206> <maze_242> <maze_246> <maze_252> <maze_292> <maze_294> <maze_296> <maze_332> <maze_334> <maze_372> 
+INFO:Xst:2261 - The FF/Latch <maze_162> in Unit <select> is equivalent to the following FF/Latch, which will be removed : <maze_278> 
+INFO:Xst:2261 - The FF/Latch <maze_42> in Unit <select> is equivalent to the following FF/Latch, which will be removed : <maze_135> 
+INFO:Xst:2261 - The FF/Latch <player_end_2> in Unit <select> is equivalent to the following 56 FFs/Latches, which will be removed : <player_end_7> <maze_21> <maze_44> <maze_46> <maze_48> <maze_50> <maze_82> <maze_84> <maze_90> <maze_94> <maze_122> <maze_124> <maze_126> <maze_134> <maze_136> <maze_138> <maze_166> <maze_168> <maze_172> <maze_174> <maze_176> <maze_178> <maze_208> <maze_210> <maze_212> <maze_214> <maze_216> <maze_218> <maze_244> <maze_248> <maze_250> <maze_254> <maze_256> <maze_258> <maze_282> <maze_284> <maze_286> <maze_288> <maze_290> <maze_298> <maze_322> <maze_324> <maze_326> <maze_328> <maze_330> <maze_336> <maze_338> <maze_362> <maze_364> <maze_366> <maze_368> <maze_369> <maze_370> <maze_374> <maze_376> <maze_378> 
+INFO:Xst:2261 - The FF/Latch <maze_51> in Unit <select> is equivalent to the following FF/Latch, which will be removed : <maze_226> 
+INFO:Xst:2261 - The FF/Latch <player_end_3> in Unit <select> is equivalent to the following FF/Latch, which will be removed : <player_end_8> 
+INFO:Xst:2261 - The FF/Latch <maze_184> in Unit <select> is equivalent to the following FF/Latch, which will be removed : <maze_211> 
+INFO:Xst:2261 - The FF/Latch <maze_106> in Unit <select> is equivalent to the following FF/Latch, which will be removed : <maze_188> 
+INFO:Xst:2261 - The FF/Latch <maze_20> in Unit <select> is equivalent to the following FF/Latch, which will be removed : <maze_379> 
+INFO:Xst:2261 - The FF/Latch <maze_81> in Unit <select> is equivalent to the following 2 FFs/Latches, which will be removed : <maze_87> <maze_371> 
+INFO:Xst:2261 - The FF/Latch <maze_337> in Unit <select> is equivalent to the following FF/Latch, which will be removed : <maze_373> 
+INFO:Xst:2261 - The FF/Latch <maze_125> in Unit <select> is equivalent to the following FF/Latch, which will be removed : <maze_262> 
+INFO:Xst:2261 - The FF/Latch <vga_b_0> in Unit <disp> is equivalent to the following FF/Latch, which will be removed : <vga_b_1> 
+INFO:Xst:2261 - The FF/Latch <vga_r_0> in Unit <disp> is equivalent to the following 2 FFs/Latches, which will be removed : <vga_r_1> <vga_r_2> 
+INFO:Xst:2261 - The FF/Latch <vga_g_0> in Unit <disp> is equivalent to the following 2 FFs/Latches, which will be removed : <vga_g_1> <vga_g_2> 
+WARNING:Xst:1710 - FF/Latch <player_end_2> (without init value) has a constant value of 0 in block <select>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <Maze>.
+The following registers are absorbed into counter <clk_div>: 1 register on signal <clk_div>.
+Unit <Maze> synthesized (advanced).
+
+Synthesizing (advanced) Unit <hvsync_generator>.
+The following registers are absorbed into counter <CounterX>: 1 register on signal <CounterX>.
+The following registers are absorbed into counter <CounterY>: 1 register on signal <CounterY>.
+Unit <hvsync_generator> synthesized (advanced).
+
+Synthesizing (advanced) Unit <player_logic>.
+The following registers are absorbed into counter <clk_debouncedv>: 1 register on signal <clk_debouncedv>.
+	Multiplier <Mmult_n0160> in block <player_logic> and adder/subtractor <Madd_n0112_Madd> in block <player_logic> are combined into a MAC<Maddsub_n0160>.
+	The following registers are also absorbed by the MAC: <plogic/player_pos_out> in block <Maze>.
+	Multiplier <Mmult_n0168> in block <player_logic> and adder/subtractor <Madd_n0121_Madd> in block <player_logic> are combined into a MAC<Maddsub_n0168>.
+	The following registers are also absorbed by the MAC: <plogic/player_pos_out> in block <Maze>.
+Unit <player_logic> synthesized (advanced).
+
+Synthesizing (advanced) Unit <score>.
+The following registers are absorbed into counter <clk_onedv>: 1 register on signal <clk_onedv>.
+The following registers are absorbed into counter <clk_dispdv>: 1 register on signal <clk_dispdv>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+INFO:Xst:3231 - The small RAM <Mram_counter[1]_GND_12_o_wide_mux_38_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <counter[1]_GND_12_o_add_37_OUT> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <score> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 4x4-bit single-port distributed Read Only RAM         : 1
+# MACs                                                 : 2
+ 5x5-to-9-bit MAC                                      : 2
+# Multipliers                                          : 2
+ 5x5-bit multiplier                                    : 2
+# Adders/Subtractors                                   : 101
+ 10-bit adder                                          : 20
+ 11-bit subtractor                                     : 2
+ 2-bit adder                                           : 1
+ 3-bit subtractor                                      : 2
+ 32-bit adder                                          : 64
+ 4-bit subtractor                                      : 6
+ 5-bit adder                                           : 2
+ 5-bit subtractor                                      : 2
+ 9-bit adder                                           : 2
+# Counters                                             : 7
+ 10-bit up counter                                     : 2
+ 18-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 21-bit up counter                                     : 1
+ 28-bit up counter                                     : 2
+# Registers                                            : 495
+ Flip-Flops                                            : 495
+# Comparators                                          : 110
+ 10-bit comparator equal                               : 1
+ 10-bit comparator greater                             : 6
+ 10-bit comparator lessequal                           : 14
+ 10-bit comparator not equal                           : 1
+ 11-bit comparator lessequal                           : 2
+ 12-bit comparator lessequal                           : 2
+ 13-bit comparator lessequal                           : 2
+ 14-bit comparator lessequal                           : 1
+ 15-bit comparator lessequal                           : 1
+ 3-bit comparator greater                              : 4
+ 32-bit comparator lessequal                           : 58
+ 33-bit comparator lessequal                           : 2
+ 34-bit comparator lessequal                           : 2
+ 35-bit comparator lessequal                           : 2
+ 36-bit comparator lessequal                           : 1
+ 37-bit comparator lessequal                           : 1
+ 5-bit comparator equal                                : 4
+ 5-bit comparator greater                              : 6
+# Multiplexers                                         : 2073
+ 1-bit 2-to-1 multiplexer                              : 2003
+ 1-bit 20-to-1 multiplexer                             : 21
+ 1-bit 4-to-1 multiplexer                              : 4
+ 1-bit 400-to-1 multiplexer                            : 4
+ 10-bit 2-to-1 multiplexer                             : 22
+ 16-bit 2-to-1 multiplexer                             : 8
+ 32-bit 2-to-1 multiplexer                             : 6
+ 8-bit 2-to-1 multiplexer                              : 5
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <maze_244> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_248> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_250> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_254> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_256> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_258> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_282> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_284> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_286> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_288> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_290> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_298> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_322> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_324> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_326> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_328> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_330> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_336> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_338> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_362> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_364> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_366> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_368> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_369> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_370> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_374> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_376> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_378> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <player_end_2> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <player_end_7> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_21> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_44> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_46> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_48> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_50> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_82> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_84> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_90> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_94> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_122> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_124> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_126> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_134> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_136> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_138> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_166> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_168> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_172> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_174> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_176> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_178> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_208> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_210> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_212> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_214> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_216> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_218> (without init value) has a constant value of 0 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <player_end_1> in Unit <maze_selector> is equivalent to the following 3 FFs/Latches, which will be removed : <player_end_4> <player_end_6> <player_end_9> 
+INFO:Xst:2261 - The FF/Latch <maze_89> in Unit <maze_selector> is equivalent to the following FF/Latch, which will be removed : <maze_314> 
+INFO:Xst:2261 - The FF/Latch <maze_270> in Unit <maze_selector> is equivalent to the following FF/Latch, which will be removed : <maze_327> 
+INFO:Xst:2261 - The FF/Latch <player_end_0> in Unit <maze_selector> is equivalent to the following 27 FFs/Latches, which will be removed : <maze_52> <maze_54> <maze_56> <maze_58> <maze_74> <maze_86> <maze_88> <maze_92> <maze_96> <maze_98> <maze_128> <maze_130> <maze_132> <maze_164> <maze_170> <maze_202> <maze_204> <maze_206> <maze_242> <maze_246> <maze_252> <maze_292> <maze_294> <maze_296> <maze_332> <maze_334> <maze_372> 
+INFO:Xst:2261 - The FF/Latch <maze_162> in Unit <maze_selector> is equivalent to the following FF/Latch, which will be removed : <maze_278> 
+INFO:Xst:2261 - The FF/Latch <maze_42> in Unit <maze_selector> is equivalent to the following FF/Latch, which will be removed : <maze_135> 
+INFO:Xst:2261 - The FF/Latch <maze_51> in Unit <maze_selector> is equivalent to the following FF/Latch, which will be removed : <maze_226> 
+INFO:Xst:2261 - The FF/Latch <player_end_3> in Unit <maze_selector> is equivalent to the following FF/Latch, which will be removed : <player_end_8> 
+INFO:Xst:2261 - The FF/Latch <maze_184> in Unit <maze_selector> is equivalent to the following FF/Latch, which will be removed : <maze_211> 
+INFO:Xst:2261 - The FF/Latch <maze_106> in Unit <maze_selector> is equivalent to the following FF/Latch, which will be removed : <maze_188> 
+INFO:Xst:2261 - The FF/Latch <maze_20> in Unit <maze_selector> is equivalent to the following FF/Latch, which will be removed : <maze_379> 
+INFO:Xst:2261 - The FF/Latch <maze_81> in Unit <maze_selector> is equivalent to the following 2 FFs/Latches, which will be removed : <maze_87> <maze_371> 
+INFO:Xst:2261 - The FF/Latch <maze_337> in Unit <maze_selector> is equivalent to the following FF/Latch, which will be removed : <maze_373> 
+INFO:Xst:2261 - The FF/Latch <maze_125> in Unit <maze_selector> is equivalent to the following FF/Latch, which will be removed : <maze_262> 
+INFO:Xst:2261 - The FF/Latch <vga_b_0> in Unit <display> is equivalent to the following FF/Latch, which will be removed : <vga_b_1> 
+INFO:Xst:2261 - The FF/Latch <vga_r_0> in Unit <display> is equivalent to the following 2 FFs/Latches, which will be removed : <vga_r_1> <vga_r_2> 
+INFO:Xst:2261 - The FF/Latch <vga_g_0> in Unit <display> is equivalent to the following 2 FFs/Latches, which will be removed : <vga_g_1> <vga_g_2> 
+WARNING:Xst:1710 - FF/Latch <cathode_7> (without init value) has a constant value of 1 in block <score>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <plogic/Maddsub_n01601_0> (without init value) has a constant value of 0 in block <Maze>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <plogic/Maddsub_n01681_0> (without init value) has a constant value of 0 in block <Maze>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <plogic/player_pos_out_5> in Unit <Maze> is equivalent to the following 2 FFs/Latches, which will be removed : <plogic/Maddsub_n01601_5> <plogic/Maddsub_n01681_5> 
+INFO:Xst:2261 - The FF/Latch <plogic/player_pos_out_6> in Unit <Maze> is equivalent to the following 2 FFs/Latches, which will be removed : <plogic/Maddsub_n01601_4> <plogic/Maddsub_n01681_4> 
+INFO:Xst:2261 - The FF/Latch <plogic/player_pos_out_7> in Unit <Maze> is equivalent to the following 2 FFs/Latches, which will be removed : <plogic/Maddsub_n01601_3> <plogic/Maddsub_n01681_3> 
+INFO:Xst:2261 - The FF/Latch <plogic/player_pos_out_8> in Unit <Maze> is equivalent to the following 2 FFs/Latches, which will be removed : <plogic/Maddsub_n01601_2> <plogic/Maddsub_n01681_2> 
+INFO:Xst:2261 - The FF/Latch <plogic/player_pos_out_9> in Unit <Maze> is equivalent to the following 2 FFs/Latches, which will be removed : <plogic/Maddsub_n01601_1> <plogic/Maddsub_n01681_1> 
+
+Optimizing unit <Maze> ...
+
+Optimizing unit <maze_selector> ...
+WARNING:Xst:1710 - FF/Latch <maze_380> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_360> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_359> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_340> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_339> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_320> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_319> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_300> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_299> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_280> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_279> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_260> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_259> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_240> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_239> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_220> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_219> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_200> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_399> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_397> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_396> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_395> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_394> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_393> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_392> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_391> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_390> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_389> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_388> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_387> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_386> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_385> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_384> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_383> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_382> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_381> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_18> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_17> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_16> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_15> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_14> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_13> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_12> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_11> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_10> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_9> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_8> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_7> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_6> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_5> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_4> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_3> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_2> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_0> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_199> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_180> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_179> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_160> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_159> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_140> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_139> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_120> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_119> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_100> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_99> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_80> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_79> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_60> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_59> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_40> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_39> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <maze_19> (without init value) has a constant value of 1 in block <maze_selector>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <player_end_1> in Unit <maze_selector> is equivalent to the following 39 FFs/Latches, which will be removed : <maze_69> <maze_101> <maze_103> <maze_105> <maze_111> <maze_115> <maze_143> <maze_145> <maze_147> <maze_155> <maze_187> <maze_189> <maze_191> <maze_195> <maze_197> <maze_223> <maze_229> <maze_231> <maze_233> <maze_235> <maze_237> <maze_261> <maze_263> <maze_265> <maze_267> <maze_269> <maze_275> <maze_303> <maze_305> <maze_307> <maze_309> <maze_317> <maze_343> <maze_345> <maze_347> <maze_349> <maze_351> <maze_355> <maze_357> 
+INFO:Xst:2261 - The FF/Latch <maze_45> in Unit <maze_selector> is equivalent to the following 2 FFs/Latches, which will be removed : <maze_186> <maze_358> 
+INFO:Xst:2261 - The FF/Latch <maze_47> in Unit <maze_selector> is equivalent to the following FF/Latch, which will be removed : <maze_57> 
+INFO:Xst:2261 - The FF/Latch <maze_137> in Unit <maze_selector> is equivalent to the following FF/Latch, which will be removed : <maze_365> 
+INFO:Xst:2261 - The FF/Latch <maze_49> in Unit <maze_selector> is equivalent to the following FF/Latch, which will be removed : <maze_78> 
+INFO:Xst:2261 - The FF/Latch <maze_41> in Unit <maze_selector> is equivalent to the following FF/Latch, which will be removed : <maze_201> 
+INFO:Xst:2261 - The FF/Latch <maze_70> in Unit <maze_selector> is equivalent to the following 2 FFs/Latches, which will be removed : <maze_97> <maze_266> 
+INFO:Xst:2261 - The FF/Latch <maze_66> in Unit <maze_selector> is equivalent to the following FF/Latch, which will be removed : <maze_329> 
+INFO:Xst:2261 - The FF/Latch <maze_335> in Unit <maze_selector> is equivalent to the following FF/Latch, which will be removed : <maze_346> 
+INFO:Xst:2261 - The FF/Latch <maze_213> in Unit <maze_selector> is equivalent to the following FF/Latch, which will be removed : <maze_331> 
+INFO:Xst:2261 - The FF/Latch <maze_289> in Unit <maze_selector> is equivalent to the following FF/Latch, which will be removed : <maze_354> 
+INFO:Xst:2261 - The FF/Latch <maze_83> in Unit <maze_selector> is equivalent to the following FF/Latch, which will be removed : <maze_255> 
+INFO:Xst:2261 - The FF/Latch <maze_1> in Unit <maze_selector> is equivalent to the following FF/Latch, which will be removed : <maze_398> 
+INFO:Xst:2261 - The FF/Latch <maze_224> in Unit <maze_selector> is equivalent to the following FF/Latch, which will be removed : <maze_272> 
+INFO:Xst:2261 - The FF/Latch <maze_232> in Unit <maze_selector> is equivalent to the following FF/Latch, which will be removed : <maze_363> 
+INFO:Xst:2261 - The FF/Latch <maze_22> in Unit <maze_selector> is equivalent to the following FF/Latch, which will be removed : <maze_285> 
+INFO:Xst:2261 - The FF/Latch <maze_23> in Unit <maze_selector> is equivalent to the following FF/Latch, which will be removed : <maze_341> 
+INFO:Xst:2261 - The FF/Latch <maze_25> in Unit <maze_selector> is equivalent to the following 33 FFs/Latches, which will be removed : <maze_29> <maze_31> <maze_33> <maze_35> <maze_37> <maze_65> <maze_67> <maze_71> <maze_73> <maze_75> <maze_77> <maze_107> <maze_109> <maze_113> <maze_117> <maze_141> <maze_149> <maze_151> <maze_153> <maze_157> <maze_183> <maze_185> <maze_193> <maze_221> <maze_225> <maze_227> <maze_271> <maze_273> <maze_277> <maze_311> <maze_313> <maze_315> <maze_353> 
+INFO:Xst:2261 - The FF/Latch <maze_30> in Unit <maze_selector> is equivalent to the following 2 FFs/Latches, which will be removed : <maze_257> <maze_281> 
+INFO:Xst:2261 - The FF/Latch <maze_194> in Unit <maze_selector> is equivalent to the following FF/Latch, which will be removed : <maze_312> 
+INFO:Xst:2261 - The FF/Latch <maze_27> in Unit <maze_selector> is equivalent to the following FF/Latch, which will be removed : <maze_283> 
+INFO:Xst:2261 - The FF/Latch <maze_34> in Unit <maze_selector> is equivalent to the following FF/Latch, which will be removed : <maze_251> 
+INFO:Xst:2261 - The FF/Latch <maze_62> in Unit <maze_selector> is equivalent to the following FF/Latch, which will be removed : <maze_196> 
+INFO:Xst:2261 - The FF/Latch <maze_118> in Unit <maze_selector> is equivalent to the following FF/Latch, which will be removed : <maze_215> 
+INFO:Xst:2261 - The FF/Latch <maze_302> in Unit <maze_selector> is equivalent to the following FF/Latch, which will be removed : <maze_361> 
+INFO:Xst:2261 - The FF/Latch <maze_43> in Unit <maze_selector> is equivalent to the following FF/Latch, which will be removed : <maze_91> 
+INFO:Xst:2261 - The FF/Latch <maze_161> in Unit <maze_selector> is equivalent to the following FF/Latch, which will be removed : <maze_181> 
+INFO:Xst:2261 - The FF/Latch <player_end_5> in Unit <maze_selector> is equivalent to the following FF/Latch, which will be removed : <maze_1> 
+INFO:Xst:2261 - The FF/Latch <maze_112> in Unit <maze_selector> is equivalent to the following FF/Latch, which will be removed : <maze_194> 
+INFO:Xst:2261 - The FF/Latch <maze_63> in Unit <maze_selector> is equivalent to the following FF/Latch, which will be removed : <maze_108> 
+INFO:Xst:2261 - The FF/Latch <maze_116> in Unit <maze_selector> is equivalent to the following FF/Latch, which will be removed : <maze_217> 
+
+Optimizing unit <score> ...
+
+Optimizing unit <display> ...
+
+Optimizing unit <hvsync_generator> ...
+
+Optimizing unit <div_10u_5u> ...
+
+Optimizing unit <div_10u_3u> ...
+WARNING:Xst:2677 - Node <clk_div_23> of sequential type is unconnected in block <Maze>.
+WARNING:Xst:2677 - Node <clk_div_24> of sequential type is unconnected in block <Maze>.
+WARNING:Xst:2677 - Node <clk_div_25> of sequential type is unconnected in block <Maze>.
+WARNING:Xst:2677 - Node <clk_div_26> of sequential type is unconnected in block <Maze>.
+WARNING:Xst:2677 - Node <clk_div_27> of sequential type is unconnected in block <Maze>.
+WARNING:Xst:1293 - FF/Latch <score/clk_dispdv_20> has a constant value of 0 in block <Maze>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <score/clk_dispdv_19> has a constant value of 0 in block <Maze>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <score/clk_dispdv_18> has a constant value of 0 in block <Maze>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <score/clk_onedv_27> has a constant value of 0 in block <Maze>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <score/clk_onedv_26> has a constant value of 0 in block <Maze>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <score/clk_onedv_25> has a constant value of 0 in block <Maze>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <score/clk_onedv_24> has a constant value of 0 in block <Maze>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <score/clk_onedv_23> has a constant value of 0 in block <Maze>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <select/maze_108> in Unit <Maze> is equivalent to the following FF/Latch, which will be removed : <select/maze_63> 
+INFO:Xst:2261 - The FF/Latch <select/maze_121> in Unit <Maze> is equivalent to the following FF/Latch, which will be removed : <select/maze_53> 
+INFO:Xst:2261 - The FF/Latch <select/maze_152> in Unit <Maze> is equivalent to the following FF/Latch, which will be removed : <select/maze_114> 
+INFO:Xst:2261 - The FF/Latch <select/maze_148> in Unit <Maze> is equivalent to the following FF/Latch, which will be removed : <select/maze_32> 
+INFO:Xst:2261 - The FF/Latch <plogic/clk_debouncedv_0> in Unit <Maze> is equivalent to the following FF/Latch, which will be removed : <clk_div_0> 
+INFO:Xst:2261 - The FF/Latch <plogic/clk_debouncedv_1> in Unit <Maze> is equivalent to the following FF/Latch, which will be removed : <clk_div_1> 
+INFO:Xst:2261 - The FF/Latch <plogic/clk_debouncedv_2> in Unit <Maze> is equivalent to the following FF/Latch, which will be removed : <clk_div_2> 
+INFO:Xst:2261 - The FF/Latch <select/maze_167> in Unit <Maze> is equivalent to the following FF/Latch, which will be removed : <select/maze_26> 
+INFO:Xst:2261 - The FF/Latch <select/maze_217> in Unit <Maze> is equivalent to the following FF/Latch, which will be removed : <select/maze_116> 
+INFO:Xst:2261 - The FF/Latch <plogic/clk_debouncedv_3> in Unit <Maze> is equivalent to the following FF/Latch, which will be removed : <clk_div_3> 
+INFO:Xst:2261 - The FF/Latch <plogic/clk_debouncedv_4> in Unit <Maze> is equivalent to the following FF/Latch, which will be removed : <clk_div_4> 
+INFO:Xst:2261 - The FF/Latch <plogic/clk_debouncedv_5> in Unit <Maze> is equivalent to the following FF/Latch, which will be removed : <clk_div_5> 
+INFO:Xst:2261 - The FF/Latch <plogic/clk_debouncedv_6> in Unit <Maze> is equivalent to the following FF/Latch, which will be removed : <clk_div_6> 
+INFO:Xst:2261 - The FF/Latch <select/maze_181> in Unit <Maze> is equivalent to the following FF/Latch, which will be removed : <select/maze_161> 
+INFO:Xst:2261 - The FF/Latch <plogic/clk_debouncedv_7> in Unit <Maze> is equivalent to the following FF/Latch, which will be removed : <clk_div_7> 
+INFO:Xst:2261 - The FF/Latch <plogic/clk_debouncedv_8> in Unit <Maze> is equivalent to the following FF/Latch, which will be removed : <clk_div_8> 
+INFO:Xst:2261 - The FF/Latch <plogic/clk_debouncedv_9> in Unit <Maze> is equivalent to the following FF/Latch, which will be removed : <clk_div_9> 
+INFO:Xst:2261 - The FF/Latch <select/maze_194> in Unit <Maze> is equivalent to the following FF/Latch, which will be removed : <select/maze_112> 
+INFO:Xst:2261 - The FF/Latch <select/maze_301> in Unit <Maze> is equivalent to the following FF/Latch, which will be removed : <select/maze_171> 
+INFO:Xst:2261 - The FF/Latch <select/maze_318> in Unit <Maze> is equivalent to the following FF/Latch, which will be removed : <select/maze_102> 
+INFO:Xst:2261 - The FF/Latch <plogic/clk_debouncedv_10> in Unit <Maze> is equivalent to the following FF/Latch, which will be removed : <clk_div_10> 
+INFO:Xst:2261 - The FF/Latch <plogic/clk_debouncedv_11> in Unit <Maze> is equivalent to the following FF/Latch, which will be removed : <clk_div_11> 
+INFO:Xst:2261 - The FF/Latch <plogic/clk_debouncedv_12> in Unit <Maze> is equivalent to the following FF/Latch, which will be removed : <clk_div_12> 
+INFO:Xst:2261 - The FF/Latch <plogic/clk_debouncedv_13> in Unit <Maze> is equivalent to the following FF/Latch, which will be removed : <clk_div_13> 
+INFO:Xst:2261 - The FF/Latch <plogic/clk_debouncedv_14> in Unit <Maze> is equivalent to the following FF/Latch, which will be removed : <clk_div_14> 
+INFO:Xst:2261 - The FF/Latch <plogic/clk_debouncedv_15> in Unit <Maze> is equivalent to the following FF/Latch, which will be removed : <clk_div_15> 
+INFO:Xst:2261 - The FF/Latch <plogic/clk_debouncedv_16> in Unit <Maze> is equivalent to the following FF/Latch, which will be removed : <clk_div_16> 
+INFO:Xst:2261 - The FF/Latch <plogic/clk_debouncedv_17> in Unit <Maze> is equivalent to the following FF/Latch, which will be removed : <clk_div_17> 
+INFO:Xst:2261 - The FF/Latch <select/maze_1> in Unit <Maze> is equivalent to the following FF/Latch, which will be removed : <select/player_end_5> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Maze, actual ratio is 36.
+FlipFlop disp/uut/CounterX_4 has been replicated 6 time(s)
+FlipFlop disp/uut/CounterX_5 has been replicated 6 time(s)
+FlipFlop disp/uut/CounterX_6 has been replicated 6 time(s)
+FlipFlop disp/uut/CounterX_7 has been replicated 5 time(s)
+FlipFlop disp/uut/CounterX_8 has been replicated 3 time(s)
+FlipFlop disp/uut/CounterX_9 has been replicated 4 time(s)
+
+Final Macro Processing ...
+
+Processing Unit <Maze> :
+	Found 2-bit shift register for signal <plogic/step_C_1>.
+	Found 2-bit shift register for signal <plogic/step_R_1>.
+	Found 2-bit shift register for signal <plogic/step_U_1>.
+	Found 2-bit shift register for signal <plogic/step_D_1>.
+	Found 2-bit shift register for signal <plogic/step_L_1>.
+Unit <Maze> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 313
+ Flip-Flops                                            : 313
+# Shift Registers                                      : 5
+ 2-bit shift register                                  : 5
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Maze.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 5358
+#      BUF                         : 1
+#      GND                         : 1
+#      INV                         : 16
+#      LUT1                        : 113
+#      LUT2                        : 72
+#      LUT3                        : 371
+#      LUT4                        : 182
+#      LUT5                        : 1251
+#      LUT6                        : 1508
+#      MUXCY                       : 932
+#      MUXF7                       : 64
+#      VCC                         : 1
+#      XORCY                       : 846
+# FlipFlops/Latches                : 318
+#      FD                          : 189
+#      FDE                         : 29
+#      FDR                         : 90
+#      FDRE                        : 10
+# Shift Registers                  : 5
+#      SRLC16E                     : 5
+# Clock Buffers                    : 3
+#      BUFG                        : 2
+#      BUFGP                       : 1
+# IO Buffers                       : 35
+#      IBUF                        : 13
+#      OBUF                        : 22
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             318  out of  18224     1%  
+ Number of Slice LUTs:                 3518  out of   9112    38%  
+    Number used as Logic:              3513  out of   9112    38%  
+    Number used as Memory:                5  out of   2176     0%  
+       Number used as SRL:                5
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   3563
+   Number with an unused Flip Flop:    3245  out of   3563    91%  
+   Number with an unused LUT:            45  out of   3563     1%  
+   Number of fully used LUT-FF pairs:   273  out of   3563     7%  
+   Number of unique control sets:        17
+
+IO Utilization: 
+ Number of IOs:                          36
+ Number of bonded IOBs:                  36  out of    232    15%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                3  out of     16    18%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 125   |
+plogic/rst                         | BUFG                   | 128   |
+score/clk_disp                     | NONE(score/counter_1)  | 13    |
+plogic/clk_debouncedv_1            | BUFG                   | 56    |
+clk_div_22                         | NONE(disp/flash)       | 1     |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 104.940ns (Maximum Frequency: 9.529MHz)
+   Minimum input arrival time before clock: 11.719ns
+   Maximum output required time after clock: 4.382ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 15.603ns (frequency: 64.090MHz)
+  Total number of paths / destination ports: 196815 / 197
+-------------------------------------------------------------------------
+Delay:               15.603ns (Levels of Logic = 14)
+  Source:            plogic/player_pos_out_6 (FF)
+  Destination:       plogic/win (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: plogic/player_pos_out_6 to plogic/win
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q             282   0.447   2.174  plogic/player_pos_out_6 (plogic/player_pos_out_6)
+     LUT2:I0->O           14   0.203   1.302  plogic/Madd_player_pos_in[9]_GND_11_o_add_45_OUT_xor<1>11 (plogic/player_pos_in[9]_GND_11_o_add_45_OUT<1>)
+     LUT6:I1->O            1   0.203   0.580  plogic/Mmux_player_pos_in[4]_X_6_o_Mux_30_o_163 (plogic/Mmux_player_pos_in[4]_X_6_o_Mux_30_o_163)
+     LUT6:I5->O            1   0.205   0.808  plogic/Mmux_player_pos_in[4]_X_6_o_Mux_30_o_121_SW0 (N3471)
+     LUT6:I3->O            1   0.205   0.827  plogic/Mmux_player_pos_in[4]_X_6_o_Mux_30_o_121 (plogic/Mmux_player_pos_in[4]_X_6_o_Mux_30_o_121)
+     LUT6:I2->O            1   0.203   0.000  plogic/Mmux_player_pos_in[4]_X_6_o_Mux_30_o_7 (plogic/Mmux_player_pos_in[4]_X_6_o_Mux_30_o_7)
+     MUXF7:I1->O           1   0.140   0.684  plogic/Mmux_player_pos_in[4]_X_6_o_Mux_30_o_6_f7 (plogic/Mmux_player_pos_in[4]_X_6_o_Mux_30_o_6_f7)
+     LUT3:I1->O            1   0.203   0.000  plogic/Mmux_player_pos_in[4]_X_6_o_Mux_30_o_3 (plogic/Mmux_player_pos_in[4]_X_6_o_Mux_30_o_3)
+     MUXF7:I1->O           7   0.140   1.138  plogic/Mmux_player_pos_in[4]_X_6_o_Mux_30_o_2_f7 (plogic/player_pos_in[4]_X_6_o_Mux_30_o)
+     LUT6:I0->O            1   0.203   0.580  plogic/Mmux_player_pos_in[9]_player_start[9]_mux_63_OUT612 (plogic/Mmux_player_pos_in[9]_player_start[9]_mux_63_OUT612)
+     LUT5:I4->O           18   0.205   1.394  plogic/Mmux_player_pos_in[9]_player_start[9]_mux_63_OUT613 (plogic/Mmux_player_pos_in[9]_player_start[9]_mux_63_OUT61)
+     LUT5:I0->O            2   0.203   0.961  plogic/Mmux_movementValid.player_pos_out[9]_player_pos_in[9]_mux_62_OUT132 (plogic/Mmux_movementValid.player_pos_out[9]_player_pos_in[9]_mux_62_OUT13)
+     LUT6:I1->O            2   0.203   0.961  plogic/Mmux_player_pos_in[9]_player_start[9]_mux_63_OUT2 (plogic/player_pos_in[9]_player_start[9]_mux_63_OUT<0>)
+     LUT6:I1->O            1   0.203   0.924  plogic/player_pos_in[9]_player_end[9]_equal_66_o102 (plogic/player_pos_in[9]_player_end[9]_equal_66_o101)
+     LUT6:I1->O            1   0.203   0.000  plogic/player_pos_in[9]_player_end[9]_equal_66_o104 (plogic/player_pos_in[9]_player_end[9]_equal_66_o)
+     FD:D                      0.102          plogic/win
+    ----------------------------------------
+    Total                     15.603ns (3.271ns logic, 12.332ns route)
+                                       (21.0% logic, 79.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'score/clk_disp'
+  Clock period: 4.218ns (frequency: 237.071MHz)
+  Total number of paths / destination ports: 123 / 20
+-------------------------------------------------------------------------
+Delay:               4.218ns (Levels of Logic = 2)
+  Source:            score/counter_0 (FF)
+  Destination:       score/cathode_6 (FF)
+  Source Clock:      score/clk_disp rising
+  Destination Clock: score/clk_disp rising
+
+  Data Path: score/counter_0 to score/cathode_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              10   0.447   1.221  score/counter_0 (score/counter_0)
+     LUT6:I0->O            8   0.203   1.050  score/Mmux_counter[1]_score[15]_wide_mux_39_OUT<1>11 (score/counter[1]_score[15]_wide_mux_39_OUT<1>)
+     LUT4:I0->O            7   0.203   0.773  score/_n0177_inv1 (score/_n0177_inv)
+     FDE:CE                    0.322          score/cathode_0
+    ----------------------------------------
+    Total                      4.218ns (1.175ns logic, 3.043ns route)
+                                       (27.9% logic, 72.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'plogic/clk_debouncedv_1'
+  Clock period: 104.940ns (frequency: 9.529MHz)
+  Total number of paths / destination ports: 1122411472079851900000000000000000000000000000000000000 / 116
+-------------------------------------------------------------------------
+Delay:               104.940ns (Levels of Logic = 178)
+  Source:            disp/uut/CounterX_5_1 (FF)
+  Destination:       disp/vga_b_0 (FF)
+  Source Clock:      plogic/clk_debouncedv_1 rising
+  Destination Clock: plogic/clk_debouncedv_1 rising
+
+  Data Path: disp/uut/CounterX_5_1 to disp/vga_b_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             10   0.447   1.104  disp/uut/CounterX_5_1 (disp/uut/CounterX_5_1)
+     LUT6:I2->O            1   0.203   0.000  disp/Msub_GND_4_o_GND_4_o_sub_6_OUT_cy<9>1111 (disp/Msub_GND_4_o_GND_4_o_sub_6_OUT_cy<9>1110)
+     MUXCY:S->O            1   0.172   0.000  disp/GND_4_o_PWR_4_o_div_6/Madd_a[31]_GND_6_o_add_31_OUT_cy<20> (disp/GND_4_o_PWR_4_o_div_6/Madd_a[31]_GND_6_o_add_31_OUT_cy<20>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_6/Madd_a[31]_GND_6_o_add_31_OUT_cy<21> (disp/GND_4_o_PWR_4_o_div_6/Madd_a[31]_GND_6_o_add_31_OUT_cy<21>)
+     XORCY:CI->O          20   0.180   1.197  disp/GND_4_o_PWR_4_o_div_6/Madd_a[31]_GND_6_o_add_31_OUT_xor<22> (disp/GND_4_o_PWR_4_o_div_6/a[31]_GND_6_o_add_31_OUT<22>)
+     LUT2:I0->O           18   0.203   1.154  disp/GND_4_o_PWR_4_o_div_6/o<16>24_SW1_SW0 (N883)
+     LUT6:I4->O           10   0.203   1.104  disp/GND_4_o_PWR_4_o_div_6/Mmux_a[0]_a[31]_MUX_787_o1161 (disp/GND_4_o_PWR_4_o_div_6/a[24]_a[31]_MUX_763_o)
+     LUT6:I2->O            5   0.203   0.819  disp/GND_4_o_PWR_4_o_div_6/o<15>21_SW0 (N2935)
+     LUT6:I4->O           15   0.203   1.210  disp/GND_4_o_PWR_4_o_div_6/Mmux_a[0]_a[31]_MUX_819_o1161 (disp/GND_4_o_PWR_4_o_div_6/a[24]_a[31]_MUX_795_o)
+     LUT5:I2->O            3   0.205   0.755  disp/GND_4_o_PWR_4_o_div_6/o<14>21_SW12 (N3159)
+     LUT6:I4->O            6   0.203   0.744  disp/GND_4_o_PWR_4_o_div_6/o<14>23_1 (disp/GND_4_o_PWR_4_o_div_6/o<14>23)
+     MUXF7:S->O            7   0.148   0.774  disp/GND_4_o_PWR_4_o_div_6/o<13>21_1 (disp/GND_4_o_PWR_4_o_div_6/o<13>211)
+     LUT6:I5->O            7   0.205   0.773  disp/GND_4_o_PWR_4_o_div_6/o<13>23_1 (disp/GND_4_o_PWR_4_o_div_6/o<13>23)
+     MUXF7:S->O           14   0.148   1.186  disp/GND_4_o_PWR_4_o_div_6/o<12>22_1 (disp/GND_4_o_PWR_4_o_div_6/o<12>221)
+     LUT6:I3->O           13   0.205   1.277  disp/GND_4_o_PWR_4_o_div_6/Mmux_a[0]_a[31]_MUX_915_o1191 (disp/GND_4_o_PWR_4_o_div_6/a[27]_a[31]_MUX_888_o)
+     LUT6:I1->O            1   0.203   0.808  disp/GND_4_o_PWR_4_o_div_6/o<11>23_SW8 (N2949)
+     LUT6:I3->O            7   0.205   1.021  disp/GND_4_o_PWR_4_o_div_6/Mmux_a[0]_a[31]_MUX_947_o1121 (disp/GND_4_o_PWR_4_o_div_6/a[20]_a[31]_MUX_927_o)
+     LUT5:I1->O            1   0.203   0.580  disp/GND_4_o_PWR_4_o_div_6/o<10>33_SW0_1 (disp/GND_4_o_PWR_4_o_div_6/o<10>33_SW0)
+     LUT6:I5->O           17   0.205   1.028  disp/GND_4_o_PWR_4_o_div_6/o<10>34_1 (disp/GND_4_o_PWR_4_o_div_6/o<10>34)
+     LUT6:I5->O            9   0.205   1.058  disp/GND_4_o_PWR_4_o_div_6/o<9>31_2 (disp/GND_4_o_PWR_4_o_div_6/o<9>312)
+     LUT6:I3->O            6   0.205   1.089  disp/GND_4_o_PWR_4_o_div_6/Mmux_a[0]_a[31]_MUX_1011_o141 (disp/GND_4_o_PWR_4_o_div_6/a[13]_a[31]_MUX_998_o)
+     LUT5:I0->O            1   0.203   0.000  disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<8>_lut<0> (disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<8>_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<8>_cy<0> (disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<8>_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<8>_cy<1> (disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<8>_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<8>_cy<2> (disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<8>_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<8>_cy<3> (disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<8>_cy<3>)
+     MUXCY:CI->O          84   0.213   1.772  disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<8>_cy<4> (disp/GND_4_o_PWR_4_o_div_6/o<8>)
+     LUT3:I2->O            3   0.205   0.995  disp/GND_4_o_PWR_4_o_div_6/Mmux_a[0]_a[31]_MUX_1043_o131 (disp/GND_4_o_PWR_4_o_div_6/a[12]_a[31]_MUX_1031_o)
+     LUT5:I0->O            1   0.203   0.000  disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<7>_lut<0> (disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<7>_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<7>_cy<0> (disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<7>_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<7>_cy<1> (disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<7>_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<7>_cy<2> (disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<7>_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<7>_cy<3> (disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<7>_cy<3>)
+     MUXCY:CI->O          67   0.213   1.660  disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<7>_cy<4> (disp/GND_4_o_PWR_4_o_div_6/o<7>)
+     LUT5:I4->O            5   0.205   1.059  disp/GND_4_o_PWR_4_o_div_6/Mmux_a[0]_a[31]_MUX_1075_o121 (disp/GND_4_o_PWR_4_o_div_6/a[11]_a[31]_MUX_1064_o)
+     LUT5:I0->O            1   0.203   0.000  disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<6>_lut<0> (disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<6>_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<6>_cy<0> (disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<6>_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<6>_cy<1> (disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<6>_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<6>_cy<2> (disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<6>_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<6>_cy<3> (disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<6>_cy<3>)
+     MUXCY:CI->O          92   0.213   1.825  disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<6>_cy<4> (disp/GND_4_o_PWR_4_o_div_6/o<6>)
+     LUT5:I4->O            3   0.205   0.995  disp/GND_4_o_PWR_4_o_div_6/Mmux_a[0]_a[31]_MUX_1107_o111 (disp/GND_4_o_PWR_4_o_div_6/a[10]_a[31]_MUX_1097_o)
+     LUT5:I0->O            1   0.203   0.000  disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<5>_lut<0> (disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<5>_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<5>_cy<0> (disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<5>_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<5>_cy<1> (disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<5>_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<5>_cy<2> (disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<5>_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<5>_cy<3> (disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<5>_cy<3>)
+     MUXCY:CI->O          74   0.213   1.706  disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<5>_cy<4> (disp/GND_4_o_PWR_4_o_div_6/o<5>)
+     LUT5:I4->O            5   0.205   1.059  disp/GND_4_o_PWR_4_o_div_6/Mmux_a[0]_a[31]_MUX_1139_o1311 (disp/GND_4_o_PWR_4_o_div_6/a[9]_a[31]_MUX_1130_o)
+     LUT5:I0->O            1   0.203   0.000  disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<4>_lut<0> (disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<4>_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<4>_cy<0> (disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<4>_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<4>_cy<1> (disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<4>_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<4>_cy<2> (disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<4>_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<4>_cy<3> (disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<4>_cy<3>)
+     MUXCY:CI->O         203   0.213   2.055  disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<4>_cy<4> (disp/Mmult_GND_4_o_PWR_4_o_MuLt_8_OUT_Madd_lut<7>)
+     LUT5:I4->O            4   0.205   1.028  disp/GND_4_o_PWR_4_o_div_6/Mmux_a[0]_a[31]_MUX_1171_o1301 (disp/GND_4_o_PWR_4_o_div_6/a[8]_a[31]_MUX_1163_o)
+     LUT5:I0->O            1   0.203   0.000  disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<3>_lut<0> (disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<3>_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<3>_cy<0> (disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<3>_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<3>_cy<1> (disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<3>_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<3>_cy<2> (disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<3>_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<3>_cy<3> (disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<3>_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<3>_cy<4> (disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<3>_cy<4>)
+     MUXCY:CI->O         212   0.019   2.057  disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<3>_cy<5> (disp/n0069<3>)
+     LUT3:I2->O            3   0.205   0.995  disp/GND_4_o_PWR_4_o_div_6/Mmux_n2529301 (disp/GND_4_o_PWR_4_o_div_6/n2529<7>)
+     LUT5:I0->O            1   0.203   0.000  disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<2>_lut<0> (disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<2>_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<2>_cy<0> (disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<2>_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<2>_cy<1> (disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<2>_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<2>_cy<2> (disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<2>_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<2>_cy<3> (disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<2>_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<2>_cy<4> (disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<2>_cy<4>)
+     MUXCY:CI->O         211   0.019   0.000  disp/GND_4_o_PWR_4_o_div_6/Mcompar_o<2>_cy<5> (disp/n0069<2>)
+     MUXCY:CI->O         128   0.213   1.951  disp/Msub_GND_4_o_GND_4_o_sub_10_OUT_cy<8>11_cy (disp/GND_4_o_PWR_4_o_div_10/Madd_GND_9_o_b[2]_add_5_OUT_Madd_lut<31>)
+     LUT1:I0->O            1   0.205   0.000  disp/GND_4_o_PWR_4_o_div_10/Madd_a[31]_GND_9_o_add_27_OUT_cy<20>_rt (disp/GND_4_o_PWR_4_o_div_10/Madd_a[31]_GND_9_o_add_27_OUT_cy<20>_rt)
+     MUXCY:S->O            1   0.172   0.000  disp/GND_4_o_PWR_4_o_div_10/Madd_a[31]_GND_9_o_add_27_OUT_cy<20> (disp/GND_4_o_PWR_4_o_div_10/Madd_a[31]_GND_9_o_add_27_OUT_cy<20>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_10/Madd_a[31]_GND_9_o_add_27_OUT_cy<21> (disp/GND_4_o_PWR_4_o_div_10/Madd_a[31]_GND_9_o_add_27_OUT_cy<21>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_10/Madd_a[31]_GND_9_o_add_27_OUT_cy<22> (disp/GND_4_o_PWR_4_o_div_10/Madd_a[31]_GND_9_o_add_27_OUT_cy<22>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_10/Madd_a[31]_GND_9_o_add_27_OUT_cy<23> (disp/GND_4_o_PWR_4_o_div_10/Madd_a[31]_GND_9_o_add_27_OUT_cy<23>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_10/Madd_a[31]_GND_9_o_add_27_OUT_cy<24> (disp/GND_4_o_PWR_4_o_div_10/Madd_a[31]_GND_9_o_add_27_OUT_cy<24>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_10/Madd_a[31]_GND_9_o_add_27_OUT_cy<25> (disp/GND_4_o_PWR_4_o_div_10/Madd_a[31]_GND_9_o_add_27_OUT_cy<25>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_10/Madd_a[31]_GND_9_o_add_27_OUT_cy<26> (disp/GND_4_o_PWR_4_o_div_10/Madd_a[31]_GND_9_o_add_27_OUT_cy<26>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_10/Madd_a[31]_GND_9_o_add_27_OUT_cy<27> (disp/GND_4_o_PWR_4_o_div_10/Madd_a[31]_GND_9_o_add_27_OUT_cy<27>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_10/Madd_a[31]_GND_9_o_add_27_OUT_cy<28> (disp/GND_4_o_PWR_4_o_div_10/Madd_a[31]_GND_9_o_add_27_OUT_cy<28>)
+     XORCY:CI->O          18   0.180   1.154  disp/GND_4_o_PWR_4_o_div_10/Madd_a[31]_GND_9_o_add_27_OUT_xor<29> (disp/GND_4_o_PWR_4_o_div_10/a[31]_GND_9_o_add_27_OUT<29>)
+     LUT6:I4->O           23   0.203   1.154  disp/GND_4_o_PWR_4_o_div_10/o<18>24_SW0 (N76)
+     LUT6:I5->O            2   0.205   0.617  disp/GND_4_o_PWR_4_o_div_10/Mmux_a[0]_a[31]_MUX_1975_o1121_SW0 (N216)
+     LUT6:I5->O           39   0.205   1.620  disp/GND_4_o_PWR_4_o_div_10/Mmux_a[0]_a[31]_MUX_1975_o1121 (disp/GND_4_o_PWR_4_o_div_10/a[20]_a[31]_MUX_1955_o)
+     LUT6:I3->O           13   0.205   1.277  disp/GND_4_o_PWR_4_o_div_10/Mmux_a[0]_a[31]_MUX_2007_o191 (disp/GND_4_o_PWR_4_o_div_10/a[18]_a[31]_MUX_1989_o)
+     LUT6:I1->O            7   0.203   0.774  disp/GND_4_o_PWR_4_o_div_10/o<16>22_SW2_SW0 (N3246)
+     LUT6:I5->O            6   0.205   0.745  disp/GND_4_o_PWR_4_o_div_10/o<16>23_1 (disp/GND_4_o_PWR_4_o_div_10/o<16>23)
+     LUT6:I5->O            3   0.205   0.755  disp/GND_4_o_PWR_4_o_div_10/o<15>22_1 (disp/GND_4_o_PWR_4_o_div_10/o<15>22)
+     LUT6:I4->O            9   0.203   0.830  disp/GND_4_o_PWR_4_o_div_10/o<15>23_2 (disp/GND_4_o_PWR_4_o_div_10/o<15>231)
+     LUT6:I5->O           14   0.205   1.302  disp/GND_4_o_PWR_4_o_div_10/o<14>23_1 (disp/GND_4_o_PWR_4_o_div_10/o<14>23)
+     LUT6:I1->O           13   0.203   1.161  disp/GND_4_o_PWR_4_o_div_10/Mmux_a[0]_a[31]_MUX_2103_o181 (disp/GND_4_o_PWR_4_o_div_10/a[17]_a[31]_MUX_2086_o)
+     LUT6:I3->O            1   0.205   0.808  disp/GND_4_o_PWR_4_o_div_10/o<13>23_2 (disp/GND_4_o_PWR_4_o_div_10/o<13>231)
+     LUT6:I3->O            1   0.205   0.808  disp/GND_4_o_PWR_4_o_div_10/Mmux_a[0]_a[31]_MUX_2167_o1411_SW0_SW1_SW0 (N3355)
+     LUT6:I3->O            8   0.205   0.803  disp/GND_4_o_PWR_4_o_div_10/Mmux_a[0]_a[31]_MUX_2167_o1411_SW0 (N204)
+     LUT6:I5->O           19   0.205   1.072  disp/GND_4_o_PWR_4_o_div_10/Mmux_a[0]_a[31]_MUX_2167_o141_1 (disp/GND_4_o_PWR_4_o_div_10/Mmux_a[0]_a[31]_MUX_2167_o1411)
+     LUT5:I4->O            2   0.205   0.721  disp/GND_4_o_PWR_4_o_div_10/Mmux_a[0]_a[31]_MUX_2199_o171_SW0 (N238)
+     LUT6:I4->O            6   0.203   1.089  disp/GND_4_o_PWR_4_o_div_10/Mmux_a[0]_a[31]_MUX_2199_o171 (disp/GND_4_o_PWR_4_o_div_10/a[16]_a[31]_MUX_2183_o)
+     LUT5:I0->O            1   0.203   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<10>_lut<1> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<10>_lut<1>)
+     MUXCY:S->O            1   0.172   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<10>_cy<1> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<10>_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<10>_cy<2> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<10>_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<10>_cy<3> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<10>_cy<3>)
+     MUXCY:CI->O          84   0.213   1.772  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<10>_cy<4> (disp/GND_4_o_PWR_4_o_div_10/o<10>)
+     LUT3:I2->O            3   0.205   0.995  disp/GND_4_o_PWR_4_o_div_10/Mmux_a[0]_a[31]_MUX_2231_o131 (disp/GND_4_o_PWR_4_o_div_10/a[12]_a[31]_MUX_2219_o)
+     LUT5:I0->O            1   0.203   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<9>_lut<0> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<9>_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<9>_cy<0> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<9>_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<9>_cy<1> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<9>_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<9>_cy<2> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<9>_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<9>_cy<3> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<9>_cy<3>)
+     MUXCY:CI->O          68   0.213   1.667  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<9>_cy<4> (disp/GND_4_o_PWR_4_o_div_10/o<9>)
+     LUT5:I4->O            5   0.205   1.059  disp/GND_4_o_PWR_4_o_div_10/Mmux_a[0]_a[31]_MUX_2263_o121 (disp/GND_4_o_PWR_4_o_div_10/a[11]_a[31]_MUX_2252_o)
+     LUT5:I0->O            1   0.203   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<8>_lut<0> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<8>_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<8>_cy<0> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<8>_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<8>_cy<1> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<8>_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<8>_cy<2> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<8>_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<8>_cy<3> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<8>_cy<3>)
+     MUXCY:CI->O          91   0.213   1.818  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<8>_cy<4> (disp/GND_4_o_PWR_4_o_div_10/o<8>)
+     LUT5:I4->O            3   0.205   0.995  disp/GND_4_o_PWR_4_o_div_10/Mmux_a[0]_a[31]_MUX_2295_o111 (disp/GND_4_o_PWR_4_o_div_10/a[10]_a[31]_MUX_2285_o)
+     LUT5:I0->O            1   0.203   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<7>_lut<0> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<7>_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<7>_cy<0> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<7>_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<7>_cy<1> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<7>_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<7>_cy<2> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<7>_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<7>_cy<3> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<7>_cy<3>)
+     MUXCY:CI->O          75   0.213   1.713  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<7>_cy<4> (disp/GND_4_o_PWR_4_o_div_10/o<7>)
+     LUT5:I4->O            5   0.205   1.059  disp/GND_4_o_PWR_4_o_div_10/Mmux_a[0]_a[31]_MUX_2327_o1311 (disp/GND_4_o_PWR_4_o_div_10/a[9]_a[31]_MUX_2318_o)
+     LUT5:I0->O            1   0.203   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<6>_lut<0> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<6>_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<6>_cy<0> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<6>_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<6>_cy<1> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<6>_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<6>_cy<2> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<6>_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<6>_cy<3> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<6>_cy<3>)
+     MUXCY:CI->O          98   0.213   1.865  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<6>_cy<4> (disp/GND_4_o_PWR_4_o_div_10/o<6>)
+     LUT5:I4->O            3   0.205   0.995  disp/GND_4_o_PWR_4_o_div_10/Mmux_a[0]_a[31]_MUX_2359_o1301 (disp/GND_4_o_PWR_4_o_div_10/a[8]_a[31]_MUX_2351_o)
+     LUT5:I0->O            1   0.203   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<5>_lut<0> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<5>_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<5>_cy<0> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<5>_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<5>_cy<1> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<5>_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<5>_cy<2> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<5>_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<5>_cy<3> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<5>_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<5>_cy<4> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<5>_cy<4>)
+     MUXCY:CI->O          79   0.213   1.739  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<5>_cy<5> (disp/GND_4_o_PWR_4_o_div_10/o<5>)
+     LUT5:I4->O            5   0.205   1.059  disp/GND_4_o_PWR_4_o_div_10/Mmux_a[0]_a[31]_MUX_2391_o111 (disp/GND_4_o_PWR_4_o_div_10/a[10]_a[31]_MUX_2381_o)
+     LUT5:I0->O            1   0.203   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<4>_lut<1> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<4>_lut<1>)
+     MUXCY:S->O            1   0.172   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<4>_cy<1> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<4>_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<4>_cy<2> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<4>_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<4>_cy<3> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<4>_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<4>_cy<4> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<4>_cy<4>)
+     MUXCY:CI->O         107   0.213   1.896  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<4>_cy<5> (disp/GND_4_o_PWR_4_o_div_10/o<4>)
+     LUT3:I2->O            4   0.205   1.028  disp/GND_4_o_PWR_4_o_div_10/Mmux_a[0]_a[31]_MUX_2423_o1281 (disp/GND_4_o_PWR_4_o_div_10/a[6]_a[31]_MUX_2417_o)
+     LUT5:I0->O            1   0.203   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<3>_lut<0> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<3>_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<3>_cy<0> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<3>_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<3>_cy<1> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<3>_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<3>_cy<2> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<3>_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<3>_cy<3> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<3>_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<3>_cy<4> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<3>_cy<4>)
+     MUXCY:CI->O         112   0.213   1.909  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<3>_cy<5> (disp/GND_4_o_PWR_4_o_div_10/o<3>)
+     LUT6:I5->O            3   0.205   0.995  disp/GND_4_o_PWR_4_o_div_10/Mmux_n2511281 (disp/GND_4_o_PWR_4_o_div_10/n2511<5>)
+     LUT5:I0->O            1   0.203   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<2>_lut<0> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<2>_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<2>_cy<0> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<2>_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<2>_cy<1> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<2>_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<2>_cy<2> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<2>_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<2>_cy<3> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<2>_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<2>_cy<4> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<2>_cy<4>)
+     MUXCY:CI->O          88   0.213   1.799  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<2>_cy<5> (disp/GND_4_o_PWR_4_o_div_10_OUT<2>)
+     LUT5:I4->O            2   0.205   0.961  disp/GND_4_o_PWR_4_o_div_10/Mmux_n2515301 (disp/GND_4_o_PWR_4_o_div_10/n2515<7>)
+     LUT5:I0->O            1   0.203   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<1>_lut<1> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<1>_lut<1>)
+     MUXCY:S->O            1   0.172   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<1>_cy<1> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<1>_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<1>_cy<2> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<1>_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<1>_cy<3> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<1>_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<1>_cy<4> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<1>_cy<4>)
+     MUXCY:CI->O          31   0.213   1.278  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<1>_cy<5> (disp/GND_4_o_PWR_4_o_div_10_OUT<1>)
+     LUT5:I4->O            2   0.205   0.961  disp/GND_4_o_PWR_4_o_div_10/Mmux_n2386291 (disp/GND_4_o_PWR_4_o_div_10/n2386<6>)
+     LUT5:I0->O            1   0.203   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<0>_lut<1> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<0>_lut<1>)
+     MUXCY:S->O            1   0.172   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<0>_cy<1> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<0>_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<0>_cy<2> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<0>_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<0>_cy<3> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<0>_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<0>_cy<4> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<0>_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<0>_cy<5> (disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<0>_cy<5>)
+     MUXCY:CI->O           1   0.213   0.580  disp/GND_4_o_PWR_4_o_div_10/Mcompar_o<0>_cy<6> (disp/GND_4_o_PWR_4_o_div_10_OUT<0>)
+     LUT6:I5->O            1   0.205   0.000  disp/Mmux_blue16 (disp/blue)
+     FD:D                      0.102          disp/vga_b_0
+    ----------------------------------------
+    Total                    104.940ns (23.269ns logic, 81.671ns route)
+                                       (22.2% logic, 77.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_div_22'
+  Clock period: 1.950ns (frequency: 512.794MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.950ns (Levels of Logic = 1)
+  Source:            disp/flash (FF)
+  Destination:       disp/flash (FF)
+  Source Clock:      clk_div_22 rising
+  Destination Clock: clk_div_22 rising
+
+  Data Path: disp/flash to disp/flash
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.447   0.616  disp/flash (disp/flash)
+     INV:I->O              1   0.206   0.579  disp/flash_INV_2513_o1_INV_0 (disp/flash_INV_2513_o)
+     FD:D                      0.102          disp/flash
+    ----------------------------------------
+    Total                      1.950ns (0.755ns logic, 1.195ns route)
+                                       (38.7% logic, 61.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 549 / 10
+-------------------------------------------------------------------------
+Offset:              11.719ns (Levels of Logic = 9)
+  Source:            sw<2> (PAD)
+  Destination:       plogic/win (FF)
+  Destination Clock: clk rising
+
+  Data Path: sw<2> to plogic/win
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            52   1.222   1.665  sw_2_IBUF (sw_2_IBUF)
+     LUT4:I2->O           25   0.203   1.297  select/sel[7]_GND_3_o_equal_36_o<7>11 (select/sel[7]_GND_3_o_equal_36_o<7>1)
+     LUT5:I3->O           40   0.203   1.653  select/sel[7]_GND_3_o_equal_36_o<7>2 (select/sel[7]_GND_3_o_equal_36_o)
+     LUT4:I0->O            7   0.203   1.002  select/sel[7]_maze_flat_1[399]_select_40_OUT<245>1 (select/sel[7]_maze_flat_1[399]_select_40_OUT<245>)
+     LUT4:I1->O            4   0.205   0.684  select/sel[7]_PWR_3_o_select_41_OUT<9>1 (select/sel[7]_PWR_3_o_select_41_OUT<9>)
+     LUT6:I5->O            1   0.205   0.580  select/player_start<0> (player_start<0>)
+     LUT6:I5->O            2   0.205   0.961  plogic/Mmux_player_pos_in[9]_player_start[9]_mux_63_OUT2 (plogic/player_pos_in[9]_player_start[9]_mux_63_OUT<0>)
+     LUT6:I1->O            1   0.203   0.924  plogic/player_pos_in[9]_player_end[9]_equal_66_o102 (plogic/player_pos_in[9]_player_end[9]_equal_66_o101)
+     LUT6:I1->O            1   0.203   0.000  plogic/player_pos_in[9]_player_end[9]_equal_66_o104 (plogic/player_pos_in[9]_player_end[9]_equal_66_o)
+     FD:D                      0.102          plogic/win
+    ----------------------------------------
+    Total                     11.719ns (2.954ns logic, 8.765ns route)
+                                       (25.2% logic, 74.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'plogic/rst'
+  Total number of paths / destination ports: 3808 / 128
+-------------------------------------------------------------------------
+Offset:              8.815ns (Levels of Logic = 7)
+  Source:            sw<2> (PAD)
+  Destination:       select/maze_224 (FF)
+  Destination Clock: plogic/rst rising
+
+  Data Path: sw<2> to select/maze_224
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            52   1.222   1.665  sw_2_IBUF (sw_2_IBUF)
+     LUT4:I2->O           25   0.203   1.193  select/sel[7]_GND_3_o_equal_36_o<7>11 (select/sel[7]_GND_3_o_equal_36_o<7>1)
+     LUT5:I4->O           37   0.205   1.363  select/sel[7]_PWR_3_o_equal_39_o<7>1 (select/sel[7]_PWR_3_o_equal_39_o)
+     LUT6:I5->O            7   0.205   0.774  select/sel[7]_maze_flat_1[399]_select_40_OUT<165>1 (select/sel[7]_maze_flat_1[399]_select_40_OUT<165>)
+     LUT6:I5->O            3   0.205   0.651  select/sel[7]_maze_flat_1[399]_select_40_OUT<83>1 (select/sel[7]_maze_flat_1[399]_select_40_OUT<83>)
+     LUT3:I2->O            2   0.205   0.617  select/sel[7]_maze_flat_1[399]_select_40_OUT<175>1 (select/sel[7]_maze_flat_1[399]_select_40_OUT<175>)
+     LUT6:I5->O            1   0.205   0.000  select/sel[7]_maze_flat_1[399]_select_40_OUT<224>1 (select/sel[7]_maze_flat_1[399]_select_40_OUT<224>)
+     FD:D                      0.102          select/maze_224
+    ----------------------------------------
+    Total                      8.815ns (2.552ns logic, 6.263ns route)
+                                       (28.9% logic, 71.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'score/clk_disp'
+  Total number of paths / destination ports: 11 / 11
+-------------------------------------------------------------------------
+Offset:              3.597ns (Levels of Logic = 1)
+  Source:            score/cathode_6 (FF)
+  Destination:       seg<6> (PAD)
+  Source Clock:      score/clk_disp rising
+
+  Data Path: score/cathode_6 to seg<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.447   0.579  score/cathode_6 (score/cathode_6)
+     OBUF:I->O                 2.571          seg_6_OBUF (seg<6>)
+    ----------------------------------------
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'plogic/clk_debouncedv_1'
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Offset:              4.382ns (Levels of Logic = 2)
+  Source:            disp/uut/vga_HS (FF)
+  Destination:       vga_h_sync (PAD)
+  Source Clock:      plogic/clk_debouncedv_1 rising
+
+  Data Path: disp/uut/vga_HS to vga_h_sync
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.447   0.579  disp/uut/vga_HS (disp/uut/vga_HS)
+     INV:I->O              1   0.206   0.579  disp/uut/vga_h_sync1_INV_0 (vga_h_sync_OBUF)
+     OBUF:I->O                 2.571          vga_h_sync_OBUF (vga_h_sync)
+    ----------------------------------------
+    Total                      4.382ns (3.224ns logic, 1.158ns route)
+                                       (73.6% logic, 26.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   15.603|         |         |         |
+plogic/rst     |   13.916|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk_div_22
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_div_22     |    1.950|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock plogic/clk_debouncedv_1
+-----------------------+---------+---------+---------+---------+
+                       | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------+---------+---------+---------+---------+
+clk                    |    6.377|         |         |         |
+clk_div_22             |    1.371|         |         |         |
+plogic/clk_debouncedv_1|  104.940|         |         |         |
+plogic/rst             |    6.927|         |         |         |
+-----------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock score/clk_disp
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    4.010|         |         |         |
+score/clk_disp |    4.218|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 66.00 secs
+Total CPU time to Xst completion: 65.80 secs
+ 
+--> 
+
+Total memory usage is 327272 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  190 (   0 filtered)
+Number of infos    :  102 (   0 filtered)
+
